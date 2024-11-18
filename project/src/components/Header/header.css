@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .625rem 1.25rem;
+  background-color: #000000;
+  color: #fff;
+  border-radius: .625rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
