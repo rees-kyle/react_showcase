@@ -47,6 +47,7 @@ import BasicConcepts from './pages/typescript/BasicConcepts';
 
 function App() {
     return(
+      <div className="app-container">
         <Router>
             <Header />
                 <Routes>
@@ -91,6 +92,7 @@ function App() {
                     <Route path="/" element={<ProjectOverview />} />
                 </Routes>
         </Router>
+      </div>
     );
 }
 
