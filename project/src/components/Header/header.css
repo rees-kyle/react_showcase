@@ -1,6 +1,6 @@
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Centers the contents horizontally */
   align-items: center;
   padding: .625rem 1.25rem;
   background-color: #000000;
@@ -11,4 +11,5 @@ header {
 .logo-container {
   display: flex;
   align-items: center;
+  justify-content: center; /* Ensures the logo and title are centered within the container */
 }
