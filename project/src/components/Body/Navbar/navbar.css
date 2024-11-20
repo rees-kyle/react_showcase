@@ -1,0 +1,96 @@
+/* Navigation Bar Styles */
+nav {
+    margin-top: 1.5rem;
+    background-color: black;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+/* Remove list styles */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main menu styles */
+.menu > li {
+    display: inline-block; /* Align menu items horizontally */
+    position: relative; /* Required for submenu positioning */
+    padding: 0rem;
+}
+
+.menu > li > span {
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    padding: 1rem 0.8rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.menu > li > a > span {
+    display: inline-block;
+    font-weight: bold; /* Ensure all chapter titles are bold */
+    color: #5e79ff;
+    cursor: pointer;
+    padding: 1rem 0.8rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.menu > li > a > span:hover {
+    color: #4afffc;
+    background-color: #404040;
+}
+
+.menu > li > span:hover,
+.menu > li:hover > span {
+    background-color: #404040;
+}
+
+/* Submenu styles */
+.submenu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: black;
+    padding-top: .2rem;
+    padding-right: .3rem;
+    padding-bottom: .3rem;
+    margin-top: 0rem;
+}
+
+/* Show submenu when hovering over the parent li */
+.menu > li:hover .submenu {
+    display: block;
+}
+
+/* Submenu item styles */
+.submenu li {
+    text-align: left;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: #5e79ff;
+    display: block;
+    padding: 0.5rem 1rem; /* Consistent padding */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.submenu li a:hover {
+    color: #4afffc;
+    background-color: #404040;
+}
+
+/* Smooth transitions for submenu appearance */
+.submenu {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu > li:hover .submenu {
+    opacity: 1;
+    transform: translateY(0);
+}
