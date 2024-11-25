@@ -94,3 +94,54 @@ ul {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Media query for mobile devices */
+@media (max-width: 1623px) {
+    nav {
+        padding: 0.5rem 1rem;
+        padding-bottom: 1.8rem;
+    }
+
+    .menu > li, .menu > a {
+        display: block;
+        padding-left: unset;
+        text-align: left;
+        position: relative;
+    }
+
+    .menu {
+        width: 12.5rem;
+        position: relative;
+    }
+
+    .submenu {
+        position: absolute;
+        left: 100%;
+        top: -.2rem;
+        width: 10rem;
+        padding-bottom: 0rem;
+        background-color: black;
+        display: none;
+        z-index: 10;
+    }
+
+    nav .menu li a span {
+        width: 14rem;
+    }
+
+    .menu > li > span, li:hover {
+        width: 14rem;
+    }
+
+    .menu .submenu li a {
+        width: 10rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        white-space: normal;
+    }
+
+    .menu > li > span {
+        white-space: nowrap;
+        display: inline-block;
+    }
+}
