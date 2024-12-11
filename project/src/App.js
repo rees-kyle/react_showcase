@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header/Header';
-import Navbar from './components/Navbar/Navbar';
+import Header from './components/header/Header';
+import Navbar from './components/navbar/Navbar';
 import ProjectOverview from './pages/ProjectOverview';
 import { 
   ComponentsAndProps,
