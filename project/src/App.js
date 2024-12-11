@@ -4,7 +4,7 @@ import Navbar from './components/navbar/Navbar';
 import ProjectOverview from './pages/ProjectOverview';
 import { 
   ComponentsAndProps,
-  JSXSyntax,
+  JSXSyntaxPage,
   StateManagementInFunctionalComponents
 } from './pages/basics';
 import {
@@ -57,7 +57,7 @@ function App() {
           <Route path="/error-handling-and-loading-states" element={<ErrorHandlingAndLoadingStates />} />
           <Route path="/fetching-data" element={<FetchingData />} />
           {/* basics */}
-          <Route path="/jsx-syntax" element={<JSXSyntax />} />
+          <Route path="/jsx-syntax" element={<JSXSyntaxPage />} />
           <Route path="/components-and-props" element={<ComponentsAndProps />} />
           <Route path="/state-management-in-functional-components" element={<StateManagementInFunctionalComponents />} />
           {/* component lifecycle */}
