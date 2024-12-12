@@ -1,4 +1,4 @@
-import { JSXSyntax, JSXElements } from '../../components/basics';
+import { JSXSyntax, JSXElements } from '../../components/basics/jsxsyntax';
 
 const JSXSyntaxPage = () => {
   return (
