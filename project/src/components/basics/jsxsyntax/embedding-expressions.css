@@ -1,0 +1,15 @@
+.img-container {
+    display: flex;             /* Correct syntax for flexbox */
+    justify-content: center;   /* Centers the image horizontally */
+    align-items: center;       /* Centers the image vertically (if needed) */
+    height: auto;
+}
+
+.img-container img {
+    max-width: 100%;           /* Set max width to 100% of the container */
+    max-height: 500px;         /* Set a maximum height for the image */
+    width: auto;               /* Maintain aspect ratio of the image */
+    height: auto;              /* Let height adjust to maintain aspect ratio */
+    object-fit: contain;       /* Keep the image within the boundaries without stretching */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);  /* Apply a box shadow */
+}

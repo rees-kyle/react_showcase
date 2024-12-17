@@ -1,10 +1,11 @@
-import { JSXSyntax, JSXElements } from '../../components/basics/jsxsyntax';
+import { JSXSyntax, JSXElements, EmbeddingExpressions } from '../../components/basics/jsxsyntax';
 
 const JSXSyntaxPage = () => {
   return (
     <>
       <JSXSyntax />
       <JSXElements />
+      <EmbeddingExpressions />
     </>
   );
 };
