@@ -1,4 +1,4 @@
-import { JSXSyntax, JSXElements, EmbeddingExpressions, ParentElement } from '../../components/basics/jsxsyntax';
+import { JSXSyntax, JSXElements, EmbeddingExpressions, ParentElement, Attributes } from '../../components/basics/jsxsyntax';
 
 const JSXSyntaxPage = () => {
   return (
@@ -7,6 +7,7 @@ const JSXSyntaxPage = () => {
       <JSXElements />
       <EmbeddingExpressions />
       <ParentElement />
+      <Attributes />
     </>
   );
 };
