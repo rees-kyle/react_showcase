@@ -20,8 +20,8 @@ const ParentElement = () => {
             </pre>
 
             <h3>Output</h3>
-            <h1>Hello, World!</h1> 
-            <p>This is a React component.</p> 
+            <h1 className="output">Hello, World!</h1> 
+            <p className="output">This is a React component.</p> 
         </div>
     );
 };

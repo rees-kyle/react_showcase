@@ -12,7 +12,7 @@ const JSXElements = () => {
             </pre>
 
             <h3>Output:</h3>
-            <h1>Hello, world!</h1>
+            <h1 className="output">Hello, world!</h1>
         </div>
     );
 };

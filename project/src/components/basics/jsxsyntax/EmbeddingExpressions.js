@@ -14,7 +14,7 @@ const EmbeddingExpressions = () => {
             </div>
 
             <h3>Output:</h3>
-            <h1>Hello, {name}!</h1>
+            <h1 className="output">Hello, {name}!</h1>
         </div>
     );
 };
