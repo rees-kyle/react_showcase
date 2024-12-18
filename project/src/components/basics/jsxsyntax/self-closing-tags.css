@@ -13,4 +13,5 @@
     object-fit: contain;       /* Keep the image within the boundaries without stretching */
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);  /* Apply a box shadow */
     padding: 1rem;
+    border: .4rem solid greenyellow;    /* Add a black border around the image */
 }
