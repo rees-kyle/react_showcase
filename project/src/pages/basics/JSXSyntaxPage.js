@@ -1,4 +1,11 @@
-import { JSXSyntax, JSXElements, EmbeddingExpressions, ParentElement, Attributes } from '../../components/basics/jsxsyntax';
+import {
+  JSXSyntax,
+  JSXElements,
+  EmbeddingExpressions,
+  ParentElement,
+  Attributes,
+  SelfClosingTags
+} from '../../components/basics/jsxsyntax';
 
 const JSXSyntaxPage = () => {
   return (
@@ -8,6 +15,7 @@ const JSXSyntaxPage = () => {
       <EmbeddingExpressions />
       <ParentElement />
       <Attributes />
+      <SelfClosingTags />
     </>
   );
 };
