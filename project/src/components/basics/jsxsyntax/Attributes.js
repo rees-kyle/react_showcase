@@ -9,6 +9,8 @@ const Attributes = () => {
     const attributeNames = <button className="btn" onClick={handleClick}>Click Me!</button>;
     return (
         <div>
+            <br/>
+            <hr/>
             <h2>Attributes</h2>
             <p>JSX uses camelCase for attribute names, such as className instead of class and onClick instead of onclick.</p>
 

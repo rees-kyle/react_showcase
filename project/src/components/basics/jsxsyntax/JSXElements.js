@@ -1,6 +1,8 @@
 const JSXElements = () => {
     return (
         <div>
+            <br/>
+            <hr/>
             <h2>JSX Elements</h2>
             <p>JSX allows you to write HTML-like code directly in JavaScript files. It’s not mandatory, but it’s a very popular way to write React code.</p>
 

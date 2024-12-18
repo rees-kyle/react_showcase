@@ -1,6 +1,8 @@
 const ParentElement = () => {
     return (
         <div>
+            <br/>
+            <hr/>
             <h2>Parent Element</h2>
             <p>
                 JSX expressions must be wrapped in a single parent element.

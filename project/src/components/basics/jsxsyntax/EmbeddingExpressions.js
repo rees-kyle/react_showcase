@@ -2,6 +2,8 @@ const EmbeddingExpressions = () => {
     const name = "Kyle";
     return (
         <div>
+            <br/>
+            <hr/>
             <h2>Embedding Expressions</h2>
             <p>You can embed any valid JavaScript expression inside curly braces in JSX. For example, variables or function calls can be included within JSX.</p>
 

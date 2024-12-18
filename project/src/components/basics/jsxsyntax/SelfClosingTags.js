@@ -4,6 +4,8 @@ import './self-closing-tags.css';
 const SelfClosingTags = () => {
     return (
         <div>
+            <br/>
+            <hr/>
             <h2>Self Closing Tags</h2>
             <p>
                 In HTML, a self-closing tag is typically written using a single tag with a slash before the closing angle bracket.
