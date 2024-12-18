@@ -7,7 +7,7 @@ const ParentElement = () => {
                 You can use a div, section, or React.Fragment, or empty tags as a wrapper.
             </p>
 
-            <h3>Code</h3>
+            <h3>Code:</h3>
             <pre>
                 <code>
 {`return ( 
@@ -19,7 +19,7 @@ const ParentElement = () => {
                 </code>
             </pre>
 
-            <h3>Output</h3>
+            <h3>Output:</h3>
             <h1 className="output">Hello, World!</h1> 
             <p className="output">This is a React component.</p> 
         </div>

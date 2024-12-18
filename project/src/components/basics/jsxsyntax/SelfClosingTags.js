@@ -10,14 +10,14 @@ const SelfClosingTags = () => {
                 This indicates that the element does not have any child elements or content inside it.
             </p>
 
-            <h3>Code</h3>
+            <h3>Code:</h3>
             <pre>
                 <code>
                     {`<img src={example} alt="An example image" />`}
                 </code>
             </pre>
 
-            <h3>Output</h3>
+            <h3>Output:</h3>
             <div className="img-container">
                 <img src={example} alt="An example" />
             </div>
