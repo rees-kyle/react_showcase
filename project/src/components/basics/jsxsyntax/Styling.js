@@ -7,7 +7,7 @@ const Styling = () => {
         <h2>Styling in JSX</h2>
         <p>Inline styles in JSX are written as an object with camelCase property names.</p>
 
-        <h3>Code</h3>
+        <h3>Code:</h3>
         <pre>
             <code>
     {`const divStyle = { color: 'palevioletred' };
@@ -16,7 +16,7 @@ const Styling = () => {
             </code>
         </pre>
 
-        <h3>Output</h3>
+        <h3>Output:</h3>
         <h1 style={divStyle}>Styled Text</h1>
     </div>
   );
