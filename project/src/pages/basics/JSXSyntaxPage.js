@@ -4,7 +4,8 @@ import {
   EmbeddingExpressions,
   ParentElement,
   Attributes,
-  SelfClosingTags
+  SelfClosingTags,
+  JavaScriptLogic
 } from '../../components/basics/jsxsyntax';
 
 const JSXSyntaxPage = () => {
@@ -16,6 +17,7 @@ const JSXSyntaxPage = () => {
       <ParentElement />
       <Attributes />
       <SelfClosingTags />
+      <JavaScriptLogic />
     </>
   );
 };
