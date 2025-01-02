@@ -5,7 +5,8 @@ import {
   ParentElement,
   Attributes,
   SelfClosingTags,
-  JavaScriptLogic
+  JavaScriptLogic,
+  Styling
 } from '../../components/basics/jsxsyntax';
 
 const JSXSyntaxPage = () => {
@@ -18,6 +19,7 @@ const JSXSyntaxPage = () => {
       <Attributes />
       <SelfClosingTags />
       <JavaScriptLogic />
+      <Styling />
     </>
   );
 };
