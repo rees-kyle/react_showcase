@@ -45,3 +45,66 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+h1 {
+  padding-top: 1rem;
+  padding-left: .5rem;
+}
+
+h2 {
+  padding-top: 1rem;
+  padding-left: .5rem;
+}
+
+h3 {
+  padding-top: 1rem;
+  padding-left: .5rem;
+}
+
+p {
+  padding-top: .5rem;
+  font-size: 1rem;
+  padding: .625rem;
+  padding-left: 2rem;
+  padding-bottom: .5rem;
+}
+
+/* images */
+img {
+  max-width: 10rem;                                                /* ensures the image scales down to fit the container */
+  height: 10rem;                                                   /* maintains aspect ratio */
+  box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);   /* shadow*/
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.output {
+  color: greenyellow;
+}
+
+code {
+  margin-top: .5rem;
+  background-color: rgba(0, 0, 0, 0.889);
+  padding: .625rem;
+  border: .625rem solid black;
+  border-radius: 0.25rem;
+  overflow: auto;
+  display: block;
+  color: green;
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 3rem;
+  box-shadow: 0 0 3.125rem rgba(133, 252, 127, 0.3);
+  max-width: 102rem;
+}
+
+
+@media (max-width: 1623px) {
+  code {
+      font-size: 1.125rem;
+      margin-left: unset;
+  }
+}
