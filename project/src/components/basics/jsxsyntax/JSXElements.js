@@ -9,7 +9,7 @@ const JSXElements = () => {
             <h3>Code:</h3>
             <pre>
                 <code>
-                    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+                    &lt;h1 className="output"&gt;Hello, world!&lt;/h1&gt;
                 </code>
             </pre>
 

@@ -14,8 +14,8 @@ const ParentElement = () => {
                 <code>
 {`return ( 
     <div> 
-        <h1>Hello, World!</h1> 
-        <p>This is a React component.</p> 
+        <h1 className="output">Hello, World!</h1>
+        <p className="output">This is a React component.</p> 
     </div>
 );`}
                 </code>

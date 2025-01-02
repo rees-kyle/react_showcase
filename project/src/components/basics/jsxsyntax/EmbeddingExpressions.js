@@ -10,7 +10,9 @@ const EmbeddingExpressions = () => {
             <h3>Code:</h3>
             <pre>
                 <code>
-                    {`const name = "Kyle";\n<h1 className="output">Hello, {name}!</h1>;`}
+                    {`const name = "Kyle";
+
+<h1 className="output">Hello, {name}!</h1>`}
                 </code>
             </pre>
 

@@ -21,7 +21,10 @@ const Attributes = () => {
     alert('Button clicked!');
 };
 
-const attributeNames = <button className="btn" onClick={handleClick}>Click Me!</button>;`}
+const attributeNames = <button className="btn" onClick={handleClick}>Click Me!</button>;
+
+{attributeNames}
+`}
                 </code>
             </pre>
 
