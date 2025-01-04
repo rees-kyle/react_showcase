@@ -1,7 +1,11 @@
+import { 
+  Components 
+} from "../../components/basics/components_and_props";
+
 const ComponentsAndProps = () => {
   return (
     <>
-      <p>This is the Components and Props page.</p>
+      <Components />
     </>
   );
 };
