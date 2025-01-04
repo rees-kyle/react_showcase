@@ -7,7 +7,7 @@ import {
   SelfClosingTags,
   JavaScriptLogic,
   Styling
-} from '../../components/basics/jsxsyntax';
+} from '../../components/basics/jsx_syntax';
 
 const JSXSyntaxPage = () => {
   return (
