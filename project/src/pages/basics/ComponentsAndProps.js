@@ -1,7 +1,8 @@
 import { 
   Components,
   FunctionalComponents,
-  JSX
+  JSX,
+  Props
 } from "../../components/basics/components_and_props";
 
 const ComponentsAndProps = () => {
@@ -10,6 +11,7 @@ const ComponentsAndProps = () => {
       <Components />
       <FunctionalComponents />
       <JSX />
+      <Props />
     </>
   );
 };
