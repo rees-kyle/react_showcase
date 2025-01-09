@@ -1,0 +1,26 @@
+button {
+    position: relative;
+    font-weight: bold;
+    left: 1rem;
+    top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1.25rem;
+    border: .0625rem solid green;
+    border-radius: .3125rem;
+    background-color: #000000;
+    color: rgb(214, 214, 214);
+    font-size: 1rem;
+    font-weight: bold;
+    width: 10rem;
+    box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    outline: none;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
+}
+
+button:active {
+    background-color: green;
+    box-shadow: 0.312rem 0.312rem 0.0312rem rgba(0, 0, 0, 0.5);
+}
