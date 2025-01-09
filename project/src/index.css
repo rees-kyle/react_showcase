@@ -58,6 +58,7 @@ h2 {
 
 h3 {
   padding-top: 1rem;
+  padding-bottom: .5rem;
   padding-left: .5rem;
 }
 
@@ -83,6 +84,17 @@ img {
 
 .underline {
   text-decoration: underline;
+}
+
+/* bulleted lists*/
+.bullet-list {
+    list-style-type: disc; /* Set the bullet style */
+    padding-left: 4rem;
+}
+
+.bullet-list li {
+    margin-bottom: 0.625rem;
+    line-height: 1.5;
 }
 
 .output {
