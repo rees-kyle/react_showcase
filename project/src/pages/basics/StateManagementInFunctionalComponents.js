@@ -1,7 +1,11 @@
+import {
+ FunctionalState
+} from '../../components/basics/state_management_in_functional_components';
+
 const StateManagementInFunctionalComponents = () => {
   return (
     <>
-      <p>This is the State Management In Functional Components page.</p>
+      <FunctionalState />
     </>
   );
 };
