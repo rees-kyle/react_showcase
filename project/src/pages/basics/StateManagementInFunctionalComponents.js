@@ -1,6 +1,7 @@
 import {
   FunctionalState,
-  UseState
+  UseState,
+  MultiState
 } from '../../components/basics/state_management_in_functional_components';
 
 const StateManagementInFunctionalComponents = () => {
@@ -8,6 +9,7 @@ const StateManagementInFunctionalComponents = () => {
     <>
       <FunctionalState />
       <UseState />
+      <MultiState />
     </>
   );
 };
