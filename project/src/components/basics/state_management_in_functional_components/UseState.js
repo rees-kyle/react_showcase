@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './use-state.css';
+import './../../../button.css';
 
 const UseState = () => {
     // declare a state variable and a function to update it.
@@ -29,14 +29,16 @@ const UseState = () => {
                     {`import { useState } from "react";
 import './use-state.css';
 
-const [count, setCount] = useState(0);
+const UseState = () => {
+    const [count, setCount] = useState(0);
 
-return (
-    <div>
-        <button onClick={() => setCount(count + 1)}>Click me!</button>
-        <h1 className="output">You clicked {count} times!</h1>
-    </div>
-);
+    return (
+        <div>
+            <button onClick={() => setCount(count + 1)}>Click me!</button>
+            <h1 className="output">You clicked {count} times!</h1>
+        </div>
+    );
+};
 `}
                 </code>
             </pre>
