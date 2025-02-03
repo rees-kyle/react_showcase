@@ -1,7 +1,8 @@
 import {
   FunctionalState,
   UseState,
-  MultiState
+  MultiState,
+  ObjectStateHandler
 } from '../../components/basics/state_management_in_functional_components';
 
 const StateManagementInFunctionalComponents = () => {
@@ -10,6 +11,7 @@ const StateManagementInFunctionalComponents = () => {
       <FunctionalState />
       <UseState />
       <MultiState />
+      <ObjectStateHandler />
     </>
   );
 };
