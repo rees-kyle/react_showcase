@@ -28,8 +28,8 @@ function MultiState() {
 
     return (
         <div>
-            <p>Name: {name}</p>
-            <p>Age: {age}</p>
+            <h1 className="output">Name: {name}</h1>
+            <h1 className="output">Age: {age}</h1>
             <button onClick={() => setAge(age + 1)}>
                 Increment Age
             </button>
