@@ -1,7 +1,11 @@
+import {
+  Demo
+} from '../../components/component_lifecycle/lifecycle_methods';
+
 const LifecycleMethods = () => {
   return (
     <>
-      <p>This is the Lifecycle Methods page.</p>
+      <Demo />
     </>
   );
 };
