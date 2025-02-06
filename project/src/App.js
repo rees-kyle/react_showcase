@@ -13,7 +13,7 @@ import {
 } from './pages/api_interaction';
 import {
   Hooks,
-  LifecycleMethods
+  LifecycleMethodsPage
 } from './pages/component_lifecycle';
 import DeploymentOptions from './pages/deployment/DeploymentOptions';
 import {
@@ -62,7 +62,7 @@ function App() {
           <Route path="/state-management-in-functional-components" element={<StateManagementInFunctionalComponents />} />
           {/* component lifecycle */}
           <Route path="/hooks" element={<Hooks />} />
-          <Route path="/lifecycle-methods" element={<LifecycleMethods />} />
+          <Route path="/lifecycle-methods" element={<LifecycleMethodsPage />} />
           {/* deployment options */}                  
           <Route path="/deployment-options" element={<DeploymentOptions />} />
           {/* forms */}
