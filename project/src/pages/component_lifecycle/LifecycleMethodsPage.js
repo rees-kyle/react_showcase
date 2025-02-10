@@ -4,7 +4,8 @@ import {
   Mounting,
   Updating,
   Unmounting,
-  ErrorHandling
+  ErrorHandling,
+  Summary
 } from '../../components/component_lifecycle/lifecycle_methods';
 
 const LifecycleMethodsPage = () => {
@@ -16,6 +17,7 @@ const LifecycleMethodsPage = () => {
       <Unmounting />
       <ErrorHandling />
       <Demo />
+      <Summary />
     </>
   );
 };
