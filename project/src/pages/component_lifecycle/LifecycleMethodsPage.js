@@ -1,7 +1,8 @@
 import {
   Demo,
   LifecycleMethods,
-  Mounting
+  Mounting,
+  Updating
 } from '../../components/component_lifecycle/lifecycle_methods';
 
 const LifecycleMethodsPage = () => {
@@ -9,6 +10,7 @@ const LifecycleMethodsPage = () => {
     <>
       <LifecycleMethods />
       <Mounting />
+      <Updating />
       <Demo />
     </>
   );
