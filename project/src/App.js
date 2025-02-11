@@ -12,7 +12,7 @@ import {
   FetchingData
 } from './pages/api_interaction';
 import {
-  Hooks,
+  HooksPage,
   LifecycleMethodsPage
 } from './pages/component_lifecycle';
 import DeploymentOptions from './pages/deployment/DeploymentOptions';
@@ -61,7 +61,7 @@ function App() {
           <Route path="/components-and-props" element={<ComponentsAndProps />} />
           <Route path="/state-management-in-functional-components" element={<StateManagementInFunctionalComponents />} />
           {/* component lifecycle */}
-          <Route path="/hooks" element={<Hooks />} />
+          <Route path="/hooks" element={<HooksPage />} />
           <Route path="/lifecycle-methods" element={<LifecycleMethodsPage />} />
           {/* deployment options */}                  
           <Route path="/deployment-options" element={<DeploymentOptions />} />
