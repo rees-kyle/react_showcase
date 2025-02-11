@@ -1,6 +1,7 @@
 import {
   Hooks,
-  ComponentLifecyclePhases
+  ComponentLifecyclePhases,
+  KeyDifferences
 } from '../../components/component_lifecycle/hooks';
 
 const HooksPage = () => {
@@ -8,6 +9,7 @@ const HooksPage = () => {
     <>
       <Hooks />
       <ComponentLifecyclePhases />
+      <KeyDifferences />
     </>
   );
 };
