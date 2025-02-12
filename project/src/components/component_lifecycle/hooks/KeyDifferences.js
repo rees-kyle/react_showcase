@@ -6,12 +6,12 @@ const KeyDifferences = () => {
             <h2>Key Differences</h2>
             <h3>useEffect</h3>
             <p>
-                When the component is initialized and added to the DOM.
+                For tasks that can happen after the render.
             </p>
 
             <h3>useLayoutEffect</h3>
             <p>
-                When the component is re-rendered due to changes in state or props.
+                For tasks that need to happen immediately after the render, especially when layout measurements or changes are required.
             </p>
         </div>
     );
