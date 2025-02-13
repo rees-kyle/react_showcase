@@ -86,6 +86,7 @@ export default Demo;
 `}
         </code>
       </pre>
+      <br/>
       <p>
         In the code, useState stores the text and width values. The span element is referenced with useRef.
         The useEffect hook measures the width after the component updates, while useLayoutEffect measures it immediately before the screen renders.
