@@ -2,6 +2,7 @@ import {
   Hooks,
   ComponentLifecyclePhases,
   UseEffect,
+  UseLayoutEffect,
   Demo,
   KeyDifferences,
   Summary
@@ -13,6 +14,7 @@ const HooksPage = () => {
       <Hooks />
       <ComponentLifecyclePhases />
       <UseEffect />
+      <UseLayoutEffect />
       <Demo />
       <KeyDifferences />
       <Summary />
