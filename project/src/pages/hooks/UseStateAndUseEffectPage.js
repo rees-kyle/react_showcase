@@ -1,6 +1,7 @@
 import {
   UseStateAndUseEffect,
-  UseState
+  UseState,
+  UseEffect
 } from '../../components/hooks/usestate_and_useeffect';
 
 const UseStateAndUseEffectPage = () => {
@@ -8,6 +9,7 @@ const UseStateAndUseEffectPage = () => {
     <>
       <UseStateAndUseEffect />
       <UseState />
+      <UseEffect />
     </>
   );
 };
