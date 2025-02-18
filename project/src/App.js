@@ -23,7 +23,7 @@ import {
 import {
   CustomHooks,
   UseContext,
-  UseStateAndUseEffect
+  UseStateAndUseEffectPage
 } from './pages/hooks';
 import {
   CodeSplitting,
@@ -71,7 +71,7 @@ function App() {
           {/* hooks */}
           <Route path="/custom-hooks" element={<CustomHooks />} />
           <Route path="/usecontext" element={<UseContext />} />
-          <Route path="/usestate-and-useeffect" element={<UseStateAndUseEffect />} />
+          <Route path="/usestate-and-useeffect" element={<UseStateAndUseEffectPage />} />
           {/* performance optimization */}
           <Route path="/code-splitting" element={<CodeSplitting />} />
           <Route path="/memoization" element={<Memoization />} />
