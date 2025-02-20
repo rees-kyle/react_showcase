@@ -21,7 +21,7 @@ import {
   FormLibraries
 } from './pages/forms';
 import {
-  CustomHooks,
+  CustomHooksPage,
   UseContext,
   UseStateAndUseEffectPage
 } from './pages/hooks';
@@ -69,7 +69,7 @@ function App() {
           <Route path="/controlled-vs-uncontrolled-components" element={<ControlledVsUncontrolledComponents />} />
           <Route path="/form-libraries" element={<FormLibraries />} />
           {/* hooks */}
-          <Route path="/custom-hooks" element={<CustomHooks />} />
+          <Route path="/custom-hooks" element={<CustomHooksPage />} />
           <Route path="/usecontext" element={<UseContext />} />
           <Route path="/usestate-and-useeffect" element={<UseStateAndUseEffectPage />} />
           {/* performance optimization */}
