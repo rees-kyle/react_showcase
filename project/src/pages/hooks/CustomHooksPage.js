@@ -1,6 +1,7 @@
 import {
   CustomHooks,
   HowTo,
+  Example,
   KeyPoints
 } from '../../components/hooks/custom_hooks';
 
@@ -9,6 +10,7 @@ const CustomHooksPage = () => {
     <>
       <CustomHooks />
       <HowTo />
+      <Example />
       <KeyPoints />
     </>
   );
