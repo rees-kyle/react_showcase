@@ -1,6 +1,7 @@
 import {
   UseContext,
-  KeyPoints
+  KeyPoints,
+  Summary
 } from '../../components/hooks/usecontext';
 
 const UseContextPage = () => {
@@ -8,6 +9,7 @@ const UseContextPage = () => {
     <>
       <UseContext />
       <KeyPoints />
+      <Summary />
     </>
   );
 };
