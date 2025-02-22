@@ -22,7 +22,7 @@ import {
 } from './pages/forms';
 import {
   CustomHooksPage,
-  UseContext,
+  UseContextPage,
   UseStateAndUseEffectPage
 } from './pages/hooks';
 import {
@@ -70,7 +70,7 @@ function App() {
           <Route path="/form-libraries" element={<FormLibraries />} />
           {/* hooks */}
           <Route path="/custom-hooks" element={<CustomHooksPage />} />
-          <Route path="/usecontext" element={<UseContext />} />
+          <Route path="/usecontext" element={<UseContextPage />} />
           <Route path="/usestate-and-useeffect" element={<UseStateAndUseEffectPage />} />
           {/* performance optimization */}
           <Route path="/code-splitting" element={<CodeSplitting />} />
