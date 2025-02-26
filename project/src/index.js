@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ProviderComponent } from './components/hooks/usecontext/ProviderComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <App />
+    <ProviderComponent>  {/* Wrap App with ProviderComponent */}
+      <App />
+    </ProviderComponent>
   </React.StrictMode>
 );
 
