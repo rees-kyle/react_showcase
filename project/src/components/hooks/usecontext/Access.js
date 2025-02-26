@@ -52,7 +52,7 @@ const Access = () => {
         </code>
       </pre>
 
-      <h3>Output:</h3>
+      <h4>Output:</h4>
       {state.user ? (
         <h1 className="output">Welcome, {state.user.name}!</h1>
       ) : (
