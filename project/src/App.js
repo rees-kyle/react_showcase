@@ -30,7 +30,7 @@ import {
   Memoization,
   UseMemoAndUseCallback
 } from './pages/performance_optimization';
-import ReactRouter from './pages/routing/ReactRouter';
+import ReactRouterPage from './pages/routing/ReactRouterPage';
 import {
   ContextAPI,
   Redux
@@ -77,7 +77,7 @@ function App() {
           <Route path="/memoization" element={<Memoization />} />
           <Route path="/usememo-and-usecallback" element={<UseMemoAndUseCallback />} />
           {/* routing */}
-          <Route path="/react-router" element={<ReactRouter />} />
+          <Route path="/react-router" element={<ReactRouterPage />} />
           {/* state management */}
           <Route path="/context-api" element={<ContextAPI />} />
           <Route path="/redux" element={<Redux />} />
