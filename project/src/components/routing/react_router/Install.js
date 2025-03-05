@@ -8,6 +8,7 @@ const Install = () => {
                 Run the following command in BASH to install 'react-router-dom' in your React project.
             </p>
 
+            <h3>Code:</h3>
             <pre>
                 <code>
                     {`npm install react-router-dom`}

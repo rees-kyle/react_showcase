@@ -9,9 +9,10 @@ const Nested = () => {
         For example, suppose you want to have a user dashboard with subpages.
       </p>
 
+      <h3>Code:</h3>
       <pre>
-          <code>
-                    {`// Dashboard.js
+        <code>
+          {`// Dashboard.js
 import { Outlet, Link } from "react-router-dom";
 
 function Dashboard() {
@@ -29,12 +30,12 @@ function Dashboard() {
 
 export default Dashboard;
 `}
-          </code>
+        </code>
       </pre>
       <br/>
       <pre>
-          <code>
-            {`// App.js
+        <code>
+          {`// App.js
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
@@ -61,7 +62,7 @@ function App() {
 
 export default App;
 `}
-          </code>
+        </code>
       </pre>
 
       <p>

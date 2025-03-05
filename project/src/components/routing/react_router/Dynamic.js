@@ -9,6 +9,7 @@ const Dynamic = () => {
         For example, if you want a user profile page that varies by user ID.
       </p>
 
+      <h3>Code:</h3>
       <pre>
         <code>
           {`// UserProfile.js
