@@ -36,6 +36,10 @@ export default App;
                 The path prop defines the URL path,
                 and the element prop specifies the component to render when the path matches.
             </p>
+
+      <p>
+        You can manually enter URL paths in the browser to test routes and ensure they render the correct components.
+      </p>
         </div>
     );
 };
