@@ -1,7 +1,8 @@
 import {
   ReactRouter,
   Install,
-  Basic
+  Basic,
+  Nested
 } from '../../components/routing/react_router';
 
 const ReactRouterPage = () => {
@@ -10,6 +11,7 @@ const ReactRouterPage = () => {
       <ReactRouter />
       <Install />
       <Basic />
+      <Nested />
     </>
   );
 };
