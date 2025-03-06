@@ -32,7 +32,7 @@ import {
 } from './pages/performance_optimization';
 import ReactRouterPage from './pages/routing/ReactRouterPage';
 import {
-  ContextAPI,
+  ContextAPIPage,
   Redux
 } from './pages/state_management';
 import {
@@ -79,7 +79,7 @@ function App() {
           {/* routing */}
           <Route path="/react-router" element={<ReactRouterPage />} />
           {/* state management */}
-          <Route path="/context-api" element={<ContextAPI />} />
+          <Route path="/context-api" element={<ContextAPIPage />} />
           <Route path="/redux" element={<Redux />} />
           {/* styling */}
           <Route path="/css-modules" element={<CSSModules />} />
