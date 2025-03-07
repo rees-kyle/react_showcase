@@ -1,13 +1,18 @@
 import {
   ContextAPI,
-  How
+  How,
+  ThemeProvider,
+  ThemedComponent
 } from '../../components/state_management/context_api';
 
 const ContextAPIPage = () => {
   return (
     <>
-      <ContextAPI />
-      <How />
+      <ThemeProvider>
+        <ContextAPI />
+        <How />
+        <ThemedComponent />
+      </ThemeProvider>
     </>
   );
 };
