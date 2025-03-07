@@ -2,7 +2,7 @@
   "name": "project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rees-kyle.github.io/react_showcase",
+  "homepage": "https://rees-kyle.github.io/react_showcase/project-overview",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
