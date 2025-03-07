@@ -49,49 +49,49 @@ import BasicConcepts from './pages/typescript/BasicConcepts';
 function App() {
   return(
     <div className="app-container">
-      <Router>
+      <Router basename="/react_showcase">
         <Header />
         <Navbar />
         <Routes>
           {/* api interaction */}
-          <Route path="/react_showcase/error-handling-and-loading-states" element={<ErrorHandlingAndLoadingStates />} />
-          <Route path="/react_showcase/fetching-data" element={<FetchingData />} />
+          <Route path="/error-handling-and-loading-states" element={<ErrorHandlingAndLoadingStates />} />
+          <Route path="/fetching-data" element={<FetchingData />} />
           {/* basics */}
-          <Route path="/react_showcase/jsx-syntax" element={<JSXSyntaxPage />} />
-          <Route path="/react_showcase/components-and-props" element={<ComponentsAndProps />} />
-          <Route path="/react_showcase/state-management-in-functional-components" element={<StateManagementInFunctionalComponents />} />
+          <Route path="/jsx-syntax" element={<JSXSyntaxPage />} />
+          <Route path="/components-and-props" element={<ComponentsAndProps />} />
+          <Route path="/state-management-in-functional-components" element={<StateManagementInFunctionalComponents />} />
           {/* component lifecycle */}
-          <Route path="/react_showcase/hooks" element={<HooksPage />} />
-          <Route path="/react_showcase/lifecycle-methods" element={<LifecycleMethodsPage />} />
+          <Route path="/hooks" element={<HooksPage />} />
+          <Route path="/lifecycle-methods" element={<LifecycleMethodsPage />} />
           {/* deployment options */}                  
-          <Route path="/react_showcase/deployment-options" element={<DeploymentOptions />} />
+          <Route path="/deployment-options" element={<DeploymentOptions />} />
           {/* forms */}
-          <Route path="/react_showcase/controlled-vs-uncontrolled-components" element={<ControlledVsUncontrolledComponents />} />
-          <Route path="/react_showcase/form-libraries" element={<FormLibraries />} />
+          <Route path="/controlled-vs-uncontrolled-components" element={<ControlledVsUncontrolledComponents />} />
+          <Route path="/form-libraries" element={<FormLibraries />} />
           {/* hooks */}
-          <Route path="/react_showcase/custom-hooks" element={<CustomHooksPage />} />
-          <Route path="/react_showcase/usecontext" element={<UseContextPage />} />
-          <Route path="/react_showcase/usestate-and-useeffect" element={<UseStateAndUseEffectPage />} />
+          <Route path="/custom-hooks" element={<CustomHooksPage />} />
+          <Route path="/usecontext" element={<UseContextPage />} />
+          <Route path="/usestate-and-useeffect" element={<UseStateAndUseEffectPage />} />
           {/* performance optimization */}
-          <Route path="/react_showcase/code-splitting" element={<CodeSplitting />} />
-          <Route path="/react_showcase/memoization" element={<Memoization />} />
-          <Route path="/react_showcase/usememo-and-usecallback" element={<UseMemoAndUseCallback />} />
+          <Route path="/code-splitting" element={<CodeSplitting />} />
+          <Route path="/memoization" element={<Memoization />} />
+          <Route path="/usememo-and-usecallback" element={<UseMemoAndUseCallback />} />
           {/* routing */}
-          <Route path="/react_showcase/react-router" element={<ReactRouterPage />} />
+          <Route path="/react-router" element={<ReactRouterPage />} />
           {/* state management */}
-          <Route path="/react_showcase/context-api" element={<ContextAPIPage />} />
-          <Route path="/react_showcase/redux" element={<Redux />} />
+          <Route path="/context-api" element={<ContextAPIPage />} />
+          <Route path="/redux" element={<Redux />} />
           {/* styling */}
-          <Route path="/react_showcase/css-modules" element={<CSSModules />} />
-          <Route path="/react_showcase/styled-components" element={<StyledComponents />} />
-          <Route path="/react_showcase/emotion" element={<Emotion />} />
+          <Route path="/css-modules" element={<CSSModules />} />
+          <Route path="/styled-components" element={<StyledComponents />} />
+          <Route path="/emotion" element={<Emotion />} />
           {/* testing */}
-          <Route path="/react_showcase/component-testing" element={<ComponentTesting />} />
-          <Route path="/react_showcase/unit-testing" element={<UnitTesting />} />
+          <Route path="/component-testing" element={<ComponentTesting />} />
+          <Route path="/unit-testing" element={<UnitTesting />} />
           {/* typescript */}
-          <Route path="/react_showcase/basic-concepts" element={<BasicConcepts />} />
+          <Route path="/basic-concepts" element={<BasicConcepts />} />
           {/* project overview */}
-          <Route path="/react_showcase/project-overview" element={<ProjectOverview />} />
+          <Route path="/project-overview" element={<ProjectOverview />} />
         </Routes>
       </Router>
     </div>
