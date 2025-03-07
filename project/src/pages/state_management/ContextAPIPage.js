@@ -2,7 +2,8 @@ import {
   ContextAPI,
   How,
   ThemeProvider,
-  ThemedComponent
+  ThemedComponent,
+  KeyPoints
 } from '../../components/state_management/context_api';
 
 const ContextAPIPage = () => {
@@ -12,6 +13,7 @@ const ContextAPIPage = () => {
         <ContextAPI />
         <How />
         <ThemedComponent />
+        <KeyPoints />
       </ThemeProvider>
     </>
   );
