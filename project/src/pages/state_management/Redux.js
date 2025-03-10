@@ -1,7 +1,11 @@
+import {
+  Example
+} from '../../components/state_management/redux';
+
 const Redux = () => {
   return (
     <>
-      <p>This is the Redux page.</p>
+      <Example />
     </>
   );
 };
