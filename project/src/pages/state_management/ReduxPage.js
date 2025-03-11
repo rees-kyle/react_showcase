@@ -1,6 +1,7 @@
 import {
   Redux,
   CoreConcepts,
+  KeyConcepts,
   Example
 } from '../../components/state_management/redux';
 
@@ -9,6 +10,7 @@ const ReduxPage = () => {
     <>
       <Redux />
       <CoreConcepts />
+      <KeyConcepts />
       <Example />
     </>
   );
