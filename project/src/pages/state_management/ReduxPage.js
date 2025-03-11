@@ -1,13 +1,15 @@
 import {
+  Redux,
   Example
 } from '../../components/state_management/redux';
 
-const Redux = () => {
+const ReduxPage = () => {
   return (
     <>
+      <Redux />
       <Example />
     </>
   );
 };
 
-export default Redux;
+export default ReduxPage;

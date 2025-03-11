@@ -33,7 +33,7 @@ import {
 import ReactRouterPage from './pages/routing/ReactRouterPage';
 import {
   ContextAPIPage,
-  Redux
+  ReduxPage
 } from './pages/state_management';
 import {
   CSSModules,
@@ -80,7 +80,7 @@ function App() {
           <Route path="/react-router" element={<ReactRouterPage />} />
           {/* state management */}
           <Route path="/context-api" element={<ContextAPIPage />} />
-          <Route path="/redux" element={<Redux />} />
+          <Route path="/redux" element={<ReduxPage />} />
           {/* styling */}
           <Route path="/css-modules" element={<CSSModules />} />
           <Route path="/styled-components" element={<StyledComponents />} />
