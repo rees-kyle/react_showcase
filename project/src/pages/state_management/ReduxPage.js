@@ -2,7 +2,8 @@ import {
   Redux,
   CoreConcepts,
   KeyConcepts,
-  Example
+  Example,
+  Summary
 } from '../../components/state_management/redux';
 
 const ReduxPage = () => {
@@ -12,6 +13,7 @@ const ReduxPage = () => {
       <CoreConcepts />
       <KeyConcepts />
       <Example />
+      <Summary />
     </>
   );
 };
