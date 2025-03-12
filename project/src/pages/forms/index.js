@@ -1,2 +1,2 @@
-export { default as ControlledVsUncontrolledComponents } from './ControlledVsUncontrolledComponents';
+export { default as ControlledVsUncontrolledComponentsPage } from './ControlledVsUncontrolledComponentsPage';
 export { default as FormLibraries } from './FormLibraries';
