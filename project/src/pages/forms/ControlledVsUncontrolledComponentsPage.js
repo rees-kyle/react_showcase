@@ -1,11 +1,13 @@
 import {
-  ControlledVsUncontrolledComponents
+  ControlledVsUncontrolledComponents,
+  ChoosingBetween
 } from '../../components/forms/controlled_vs_uncontrolled_components';
 
 const ControlledVsUncontrolledComponentsPage = () => {
   return (
     <>
       <ControlledVsUncontrolledComponents />
+      <ChoosingBetween />
     </>
   );
 };
