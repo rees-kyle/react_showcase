@@ -48,7 +48,7 @@ function Controlled() {
                     "        event.preventDefault();\n" +
                     "        console.log('Form submitted with value: ' + inputValue);\n" +
                     "        alert('Submitted value: ' + inputValue);\n" +
-                    "    };\n\n" +
+                    "    };\n\n\n" +
                     "    return (\n" +
                     "        <div>\n" +
                     "            <form onSubmit={handleSubmit}>\n" +
@@ -77,6 +77,9 @@ function Controlled() {
                 />
                 <button type="submit">Submit</button> {/* Button to submit the form */}
             </form>
+            <h1 className="output">
+                You can use the browser’s developer tools (Inspect) to view console messages for this example.
+            </h1>
 
             <h3>Advantages:</h3>
             <p>
