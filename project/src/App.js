@@ -18,7 +18,7 @@ import {
 import DeploymentOptions from './pages/deployment/DeploymentOptions';
 import {
   ControlledVsUncontrolledComponentsPage,
-  FormLibraries
+  FormLibrariesPage
 } from './pages/forms';
 import {
   CustomHooksPage,
@@ -67,7 +67,7 @@ function App() {
           <Route path="/deployment-options" element={<DeploymentOptions />} />
           {/* forms */}
           <Route path="/controlled-vs-uncontrolled-components" element={<ControlledVsUncontrolledComponentsPage />} />
-          <Route path="/form-libraries" element={<FormLibraries />} />
+          <Route path="/form-libraries" element={<FormLibrariesPage />} />
           {/* hooks */}
           <Route path="/custom-hooks" element={<CustomHooksPage />} />
           <Route path="/usecontext" element={<UseContextPage />} />
