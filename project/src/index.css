@@ -88,13 +88,13 @@ img {
 
 /* bulleted lists*/
 .bullet-list {
-    list-style-type: disc; /* Set the bullet style */
-    padding-left: 4rem;
+  list-style-type: disc; /* Set the bullet style */
+  padding-left: 4rem;
 }
 
 .bullet-list li {
-    margin-bottom: 0.625rem;
-    line-height: 1.5;
+  margin-bottom: 0.625rem;
+  line-height: 1.5;
 }
 
 .output {
@@ -119,19 +119,39 @@ code {
 }
 
 input[type="text"] {
-    width: 100%;
-    max-width: 15rem;
-    padding: .75rem;
-    border: 0.09375rem solid #000000;
-    box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);
-    border-radius: 0.25rem;
-    font-size: 1.2rem;
-    color: black;
+  width: 100%;
+  max-width: 15rem;
+  padding: .75rem;
+  border: 0.09375rem solid #000000;
+  box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  color: black;
 }
 
+input[type="email"] {
+  width: 100%;
+  max-width: 15rem;
+  padding: .75rem;
+  border: 0.09375rem solid #000000;
+  box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.label {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+.error-message {
+  color: red;
+}
 @media (max-width: 1623px) {
   code {
-      font-size: 1.125rem;
-      margin-left: unset;
+    font-size: 1.125rem;
+    margin-left: unset;
   }
 }
