@@ -2,6 +2,7 @@ import {
   DeploymentOptions,
   Netlify,
   Vercel,
+  GitHubPages,
   Summary
 } from '../../components/deployment/deployment_options';
 
@@ -11,6 +12,7 @@ const DeploymentOptionsPage = () => {
       <DeploymentOptions />
       <Netlify />
       <Vercel />
+      <GitHubPages />
       <Summary />
     </>
   );
