@@ -15,7 +15,7 @@ import {
   HooksPage,
   LifecycleMethodsPage
 } from './pages/component_lifecycle';
-import DeploymentOptions from './pages/deployment/DeploymentOptions';
+import DeploymentOptionsPage from './pages/deployment/DeploymentOptionsPage';
 import {
   ControlledVsUncontrolledComponentsPage,
   FormLibrariesPage
@@ -64,7 +64,7 @@ function App() {
           <Route path="/hooks" element={<HooksPage />} />
           <Route path="/lifecycle-methods" element={<LifecycleMethodsPage />} />
           {/* deployment options */}                  
-          <Route path="/deployment-options" element={<DeploymentOptions />} />
+          <Route path="/deployment-options" element={<DeploymentOptionsPage />} />
           {/* forms */}
           <Route path="/controlled-vs-uncontrolled-components" element={<ControlledVsUncontrolledComponentsPage />} />
           <Route path="/form-libraries" element={<FormLibrariesPage />} />
