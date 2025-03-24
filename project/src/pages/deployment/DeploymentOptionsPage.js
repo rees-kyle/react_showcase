@@ -1,6 +1,7 @@
 import {
   DeploymentOptions,
   Netlify,
+  Vercel,
   Summary
 } from '../../components/deployment/deployment_options';
 
@@ -9,6 +10,7 @@ const DeploymentOptionsPage = () => {
     <>
       <DeploymentOptions />
       <Netlify />
+      <Vercel />
       <Summary />
     </>
   );
