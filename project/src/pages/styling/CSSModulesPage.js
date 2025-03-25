@@ -4,7 +4,8 @@ import {
   Usage,
   ConditionalStyling,
   CombiningClasses,
-  MyComponent
+  MyComponent,
+  Summary
 } from '../../components/styling/css_modules';
 
 const CSSModulesPage = () => {
@@ -16,6 +17,7 @@ const CSSModulesPage = () => {
       <ConditionalStyling />
       <CombiningClasses />
       <MyComponent />
+      <Summary />
     </>
   );
 };
