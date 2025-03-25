@@ -1,0 +1,1 @@
+export { default as CSSModules } from './CSSModules';

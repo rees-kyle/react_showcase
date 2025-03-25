@@ -36,7 +36,7 @@ import {
   ReduxPage
 } from './pages/state_management';
 import {
-  CSSModules,
+  CSSModulesPage,
   Emotion,
   StyledComponents
 } from './pages/styling';
@@ -82,7 +82,7 @@ function App() {
           <Route path="/context-api" element={<ContextAPIPage />} />
           <Route path="/redux" element={<ReduxPage />} />
           {/* styling */}
-          <Route path="/css-modules" element={<CSSModules />} />
+          <Route path="/css-modules" element={<CSSModulesPage />} />
           <Route path="/styled-components" element={<StyledComponents />} />
           <Route path="/emotion" element={<Emotion />} />
           {/* testing */}
