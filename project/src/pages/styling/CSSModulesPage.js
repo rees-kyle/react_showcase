@@ -3,7 +3,8 @@ import {
   SetUp,
   Usage,
   ConditionalStyling,
-  CombiningClasses
+  CombiningClasses,
+  MyComponent
 } from '../../components/styling/css_modules';
 
 const CSSModulesPage = () => {
@@ -14,6 +15,7 @@ const CSSModulesPage = () => {
       <Usage />
       <ConditionalStyling />
       <CombiningClasses />
+      <MyComponent />
     </>
   );
 };
