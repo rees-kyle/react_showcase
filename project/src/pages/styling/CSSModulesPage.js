@@ -1,7 +1,8 @@
 import {
   CSSModules,
   SetUp,
-  Usage
+  Usage,
+  ConditionalStyling
 } from '../../components/styling/css_modules';
 
 const CSSModulesPage = () => {
@@ -10,6 +11,7 @@ const CSSModulesPage = () => {
       <CSSModules />
       <SetUp />
       <Usage />
+      <ConditionalStyling />
     </>
   );
 };
