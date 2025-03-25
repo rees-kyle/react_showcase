@@ -3,7 +3,7 @@ const SetUp = () => {
     <div>
       <br/>
       <hr/>
-      <h2>Set Up CSS Modules</h2>
+      <h2>Setting Up CSS Modules</h2>
       <p>
         Create a CSS file with a `.module.css` extension, such as `MyComponent.module.css`,
         and then import it in your component.
