@@ -13,8 +13,7 @@ const Usage = () => {
       <h3>Code:</h3>
       <pre>
         <code>
-          {`/* MyComponent.module.css */
-.container {
+          {`.container {
     background-color: #CCCCCC;
     padding: 20px;
     border-radius: 5px;
@@ -32,8 +31,7 @@ const Usage = () => {
       <br/>
       <pre>
         <code>
-          {`// MyComponent.js
-import React from "react";
+          {`import React from "react";
 import styles from "./MyComponent.module.css";
 
 const MyComponent = () => {
