@@ -1,6 +1,7 @@
 import {
   CSSModules,
   SetUp,
+  Usage
 } from '../../components/styling/css_modules';
 
 const CSSModulesPage = () => {
@@ -8,6 +9,7 @@ const CSSModulesPage = () => {
     <>
       <CSSModules />
       <SetUp />
+      <Usage />
     </>
   );
 };
