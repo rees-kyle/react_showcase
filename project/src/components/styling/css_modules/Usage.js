@@ -3,7 +3,7 @@ const Usage = () => {
     <div>
       <br/>
       <hr/>
-      <h2>2. Using CSS Modules</h2>
+      <h2>Using CSS Modules</h2>
       <p>
         Once imported, you can apply styles using the styles object.
         Each class name in the generated HTML is unique,

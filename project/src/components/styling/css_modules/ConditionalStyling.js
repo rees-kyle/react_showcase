@@ -3,7 +3,7 @@ const ConditionalStyling = () => {
     <div>
       <br/>
       <hr/>
-      <h2>3. Conditional Styling</h2>
+      <h2>Conditional Styling</h2>
       <p>
         You can dynamically apply classes based on component state or props.
       </p>

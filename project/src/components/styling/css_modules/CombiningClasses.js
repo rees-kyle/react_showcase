@@ -3,7 +3,7 @@ const CombiningClasses = () => {
     <div>
       <br/>
       <hr/>
-      <h2>4. Combining Classes</h2>
+      <h2>Combining Classes</h2>
       <p>
         You can apply multiple classes using template literals.
       </p>
