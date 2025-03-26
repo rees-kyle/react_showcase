@@ -1,6 +1,7 @@
 import {
   StyledComponents,
-  Install
+  Install,
+  Tips
 } from '../../components/styling/styled_components';
 
 const StyledComponentsPage = () => {
@@ -8,6 +9,7 @@ const StyledComponentsPage = () => {
     <>
       <StyledComponents />
       <Install />
+      <Tips />
     </>
   );
 };
