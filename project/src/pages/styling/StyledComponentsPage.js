@@ -1,11 +1,13 @@
 import {
-  StyledComponents
+  StyledComponents,
+  Install
 } from '../../components/styling/styled_components';
 
 const StyledComponentsPage = () => {
   return (
     <>
       <StyledComponents />
+      <Install />
     </>
   );
 };
