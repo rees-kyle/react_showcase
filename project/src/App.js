@@ -38,7 +38,7 @@ import {
 import {
   CSSModulesPage,
   Emotion,
-  StyledComponents
+  StyledComponentsPage
 } from './pages/styling';
 import {
   ComponentTesting,
@@ -83,7 +83,7 @@ function App() {
           <Route path="/redux" element={<ReduxPage />} />
           {/* styling */}
           <Route path="/css-modules" element={<CSSModulesPage />} />
-          <Route path="/styled-components" element={<StyledComponents />} />
+          <Route path="/styled-components" element={<StyledComponentsPage />} />
           <Route path="/emotion" element={<Emotion />} />
           {/* testing */}
           <Route path="/component-testing" element={<ComponentTesting />} />
