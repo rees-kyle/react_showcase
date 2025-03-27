@@ -3,8 +3,9 @@ import {
   Install,
   CreateAndUse,
   PassingProps,
+  Extending,
   Tips,
-  Summary,
+  Summary
 } from '../../components/styling/styled_components';
 
 const StyledComponentsPage = () => {
@@ -14,6 +15,7 @@ const StyledComponentsPage = () => {
       <Install />
       <CreateAndUse />
       <PassingProps />
+      <Extending />
       <Tips />
       <Summary />
     </>
