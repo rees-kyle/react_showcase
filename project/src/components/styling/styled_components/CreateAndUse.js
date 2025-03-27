@@ -40,14 +40,15 @@ const Button = styled.button\`
   background-color: #4CAF50;
   border: none;
   color: white;
-  padding: 10px 20px;
+  padding: 0.5rem 1rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 1.2rem;
+  margin: 0rem 1rem;
+  margin-bottom: 2rem;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 0.3rem;
 
   &:hover {
     background-color: #45a049;
