@@ -4,6 +4,7 @@ import {
   CreateAndUse,
   PassingProps,
   Extending,
+  GlobalStyles,
   Tips,
   Summary
 } from '../../components/styling/styled_components';
@@ -16,6 +17,7 @@ const StyledComponentsPage = () => {
       <CreateAndUse />
       <PassingProps />
       <Extending />
+      <GlobalStyles />
       <Tips />
       <Summary />
     </>
