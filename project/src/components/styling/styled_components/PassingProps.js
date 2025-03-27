@@ -22,19 +22,19 @@ const Button = styled.button`
 `;
 
 const PassingProps = () => {
-    return (
-        <div>
-          <br/>
-          <hr/>
-          <h2>Passing Props to Styled Components</h2>
-          <p>
-            You can also make your styled components dynamic by passing props. For instance, changing the button color based on a 'primary' prop.
-          </p>
+  return (
+    <div>
+      <br/>
+      <hr/>
+      <h2>Passing Props to Styled Components</h2>
+      <p>
+        You can also make your styled components dynamic by passing props. For instance, changing the button color based on a 'primary' prop.
+      </p>
 
-          <h3>Code:</h3>
-          <pre>
-            <code>
-              {`import styled from 'styled-components';
+      <h3>Code:</h3>
+      <pre>
+        <code>
+          {`import styled from 'styled-components';
 
 const Button = styled.button\`
   background-color: \${props => props.primary ? '#E07A5F' : '#008CBA'};
@@ -56,16 +56,16 @@ const Button = styled.button\`
   }
 \`;
 `}
-            </code>
-          </pre>
+        </code>
+      </pre>
 
-          <p>
-            Now, pass the 'primary' prop to control the button’s style.
-          </p>
+      <p>
+        Now, pass the 'primary' prop to control the button’s style.
+      </p>
 
-          <pre>
-            <code>
-              {`const PassingProps = () => {
+      <pre>
+        <code>
+          {`const PassingProps = () => {
   return (
     <div>
       <Button primary>Primary Button</Button>
@@ -77,17 +77,17 @@ const Button = styled.button\`
 
 export default PassingProps;
 `}
-            </code>
-          </pre>
+        </code>
+      </pre>
 
-          <h3>Output:</h3>
-          {/* Render a Button component with the 'primary' prop applied, making it a "Primary Button" */}
-          <Button primary>Primary Button</Button>
-          <br/>
-          {/* Render a Button component without the 'primary' prop, making it a "Default Button" */}
-          <Button>Default Button</Button>
-        </div>
-    );
+      <h3>Output:</h3>
+      {/* Render a Button component with the 'primary' prop applied, making it a "Primary Button" */}
+      <Button primary>Primary Button</Button>
+      <br/>
+      {/* Render a Button component without the 'primary' prop, making it a "Default Button" */}
+      <Button>Default Button</Button>
+    </div>
+  );
 };
 
 export default PassingProps;
