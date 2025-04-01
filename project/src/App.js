@@ -37,7 +37,7 @@ import {
 } from './pages/state_management';
 import {
   CSSModulesPage,
-  Emotion,
+  EmotionPage,
   StyledComponentsPage
 } from './pages/styling';
 import {
@@ -84,7 +84,7 @@ function App() {
           {/* styling */}
           <Route path="/css-modules" element={<CSSModulesPage />} />
           <Route path="/styled-components" element={<StyledComponentsPage />} />
-          <Route path="/emotion" element={<Emotion />} />
+          <Route path="/emotion" element={<EmotionPage />} />
           {/* testing */}
           <Route path="/component-testing" element={<ComponentTesting />} />
           <Route path="/unit-testing" element={<UnitTesting />} />
