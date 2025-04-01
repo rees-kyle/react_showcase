@@ -1,11 +1,13 @@
 import {
-  Emotion
+  Emotion,
+  Setup
 } from '../../components/styling/emotion';
 
 const EmotionPage = () => {
   return (
     <>
       <Emotion />
+      <Setup />
     </>
   );
 };
