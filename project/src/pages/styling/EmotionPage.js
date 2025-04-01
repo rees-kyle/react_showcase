@@ -1,6 +1,7 @@
 import {
   Emotion,
-  Setup
+  Setup,
+  Usage
 } from '../../components/styling/emotion';
 
 const EmotionPage = () => {
@@ -8,6 +9,7 @@ const EmotionPage = () => {
     <>
       <Emotion />
       <Setup />
+      <Usage />
     </>
   );
 };
