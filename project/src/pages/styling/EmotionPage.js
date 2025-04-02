@@ -3,6 +3,7 @@ import {
   Setup,
   Usage,
   CSSProp,
+  StyledComponents,
   Summary
 } from '../../components/styling/emotion';
 
@@ -13,6 +14,7 @@ const EmotionPage = () => {
       <Setup />
       <Usage />
       <CSSProp />
+      <StyledComponents />
       <Summary />
     </>
   );
