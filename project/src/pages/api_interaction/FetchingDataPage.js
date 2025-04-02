@@ -1,6 +1,7 @@
 import {
   FetchingData,
-  KeyDifferences
+  KeyDifferences,
+  Summary
 } from '../../components/api_interaction/fetching_data';
 
 const FetchingDataPage = () => {
@@ -8,6 +9,7 @@ const FetchingDataPage = () => {
     <>
       <FetchingData />
       <KeyDifferences />
+      <Summary />
     </>
   );
 };
