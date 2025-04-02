@@ -9,7 +9,7 @@ import {
 } from './pages/basics';
 import {
   ErrorHandlingAndLoadingStates,
-  FetchingData
+  FetchingDataPage
 } from './pages/api_interaction';
 import {
   HooksPage,
@@ -55,7 +55,7 @@ function App() {
         <Routes>
           {/* api interaction */}
           <Route path="/error-handling-and-loading-states" element={<ErrorHandlingAndLoadingStates />} />
-          <Route path="/fetching-data" element={<FetchingData />} />
+          <Route path="/fetching-data" element={<FetchingDataPage />} />
           {/* basics */}
           <Route path="/jsx-syntax" element={<JSXSyntaxPage />} />
           <Route path="/components-and-props" element={<ComponentsAndProps />} />
