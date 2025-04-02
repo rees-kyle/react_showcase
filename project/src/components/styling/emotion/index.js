@@ -3,4 +3,5 @@ export { default as Setup } from './Setup';
 export { default as Usage } from './Usage';
 export { default as CSSProp } from './CSSProp';
 export { default as StyledComponents } from './StyledComponents';
+export { default as Theming } from './Theming';
 export { default as Summary } from './Summary';

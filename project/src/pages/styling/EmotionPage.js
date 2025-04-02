@@ -4,6 +4,7 @@ import {
   Usage,
   CSSProp,
   StyledComponents,
+  Theming,
   Summary
 } from '../../components/styling/emotion';
 
@@ -15,6 +16,7 @@ const EmotionPage = () => {
       <Usage />
       <CSSProp />
       <StyledComponents />
+      <Theming />
       <Summary />
     </>
   );
