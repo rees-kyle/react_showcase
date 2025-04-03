@@ -11,9 +11,22 @@ const UsingAxios = () => {
       <br />
       <hr />
       <h2>Using 'Axios'</h2>
-      <p>Axios is a promise-based HTTP client for the browser and Node.js.</p>
+      <p>
+        'axios' is a popular library for making HTTP requests.
+        It’s easier to use than 'fetch' in some ways
+        because it automatically transforms the response to JSON
+        and simplifies error handling.
+      </p>
 
       <h3>Code:</h3>
+      <pre>
+        <code>
+          {`# Navigate to project directory and install axios in BASH if you haven't done so already
+npm install axios
+`}
+        </code>
+      </pre>
+      <br />
       <pre>
         <code>
           {`// fetchDataAxios.js
