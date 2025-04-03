@@ -3,6 +3,7 @@ import {
   UsingFetch,
   UsingFetchAsyncAwait,
   UsingAxios,
+  UsingAxiosAsyncAwait,
   KeyDifferences,
   Summary
 } from '../../components/api_interaction/fetching_data';
@@ -14,6 +15,7 @@ const FetchingDataPage = () => {
       <UsingFetch />
       <UsingFetchAsyncAwait />
       <UsingAxios />
+      <UsingAxiosAsyncAwait />
       <KeyDifferences />
       <Summary />
     </>
