@@ -1,7 +1,8 @@
 import {
   FetchingData,
-  KeyDifferences,
   UsingFetch,
+  UsingFetchAsyncAwait,
+  KeyDifferences,
   Summary
 } from '../../components/api_interaction/fetching_data';
 
@@ -9,8 +10,9 @@ const FetchingDataPage = () => {
   return (
     <>
       <FetchingData />
-      <KeyDifferences />
       <UsingFetch />
+      <UsingFetchAsyncAwait />
+      <KeyDifferences />
       <Summary />
     </>
   );
