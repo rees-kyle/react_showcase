@@ -30,27 +30,26 @@ const ErrorHandling = () => {
   }, []);
 
   return (
-    <>
-      <div>
-        <br/>
-        <hr/>
-        <h2>Error Handling</h2>
-        <p>
-          Gracefully handling errors improves the user experience
-          by providing clear messages when something goes wrong.
-          Using an error state variable allows you to track issues
-          and show helpful feedback.
-        </p>
-        <p>
-          When an error occurs, you can display a message and offer a retry option.
-          This helps users understand the issue and gives them a chance to fix it,
-          making the app more user-friendly.
-        </p>
+    <div>
+      <br/>
+      <hr/>
+      <h2>Error Handling</h2>
+      <p>
+        Gracefully handling errors improves the user experience
+        by providing clear messages when something goes wrong.
+        Using an error state variable allows you to track issues
+        and show helpful feedback.
+      </p>
+      <p>
+        When an error occurs, you can display a message and offer a retry option.
+        This helps users understand the issue and gives them a chance to fix it,
+        making the app more user-friendly.
+      </p>
 
-        <h3>Code:</h3>
-        <pre>
-          <code>
-            {`// ErrorMessage.js
+      <h3>Code:</h3>
+      <pre>
+        <code>
+          {`// ErrorMessage.js
 const ErrorMessage = ({ message, onRetry }) => {
   return (
     <div style={styles.errorContainer}>
@@ -96,12 +95,12 @@ styles.retryButton[':hover'] = {
 
 export default ErrorMessage;
 `}
-          </code>
-        </pre>
-        <br/>
-        <pre>
-          <code>
-            {`// ErrorHandling.js
+        </code>
+      </pre>
+      <br/>
+      <pre>
+        <code>
+          {`// ErrorHandling.js
 import React, { useState, useEffect } from 'react';
 import LoadingSpinner from './LoadingSpinner';
 import DataContent from './DataContent';
@@ -133,35 +132,32 @@ const ErrorHandling = () => {
   }, []);
 
   return (
-    <>
-      <div>
-        {loading ? (
-            <LoadingSpinner />
-        ) : error ? (
-            <ErrorMessage message={error} onRetry={fetchData} />
-        ) : (
-            <DataContent data={data} />
-        )}
-      </div>
-    </>
+    <div>
+      {loading ? (
+          <LoadingSpinner />
+      ) : error ? (
+          <ErrorMessage message={error} onRetry={fetchData} />
+      ) : (
+          <DataContent data={data} />
+      )}
+    </div>
   );
 };
 
 export default ErrorHandling;
 `}
-          </code>
-        </pre>
+        </code>
+      </pre>
 
-        <h3>Output:</h3>
-        {loading ? (
-            <LoadingSpinner /> // Show loading spinner while data is being fetched
-        ) : error ? (
-            <ErrorMessage message={error} onRetry={fetchData} /> // Show error message if fetch fails
-        ) : (
-            <DataContent data={data} /> // Show data if fetch succeeds
-        )}
-      </div>
-    </>
+      <h3>Output:</h3>
+      {loading ? (
+          <LoadingSpinner /> // Show loading spinner while data is being fetched
+      ) : error ? (
+          <ErrorMessage message={error} onRetry={fetchData} /> // Show error message if fetch fails
+      ) : (
+          <DataContent data={data} /> // Show data if fetch succeeds
+      )}
+    </div>
   );
 };
 

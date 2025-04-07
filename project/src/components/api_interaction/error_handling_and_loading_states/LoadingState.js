@@ -29,24 +29,23 @@ const LoadingState = () => {
   }, []); // Empty dependency array means this runs only once
 
   return (
-    <>
-      <div>
-        <br/>
-        <hr/>
-        <h2>Loading State</h2>
-        <p>
-          Feedback is given to the user during data fetching
-          by displaying a loading spinner or placeholder.
-        </p>
-        <p>
-          A loading state variable controls whether the spinner or actual content is shown,
-          updating once the fetch is complete.
-        </p>
+    <div>
+      <br/>
+      <hr/>
+      <h2>Loading State</h2>
+      <p>
+        Feedback is given to the user during data fetching
+        by displaying a loading spinner or placeholder.
+      </p>
+      <p>
+        A loading state variable controls whether the spinner or actual content is shown,
+        updating once the fetch is complete.
+      </p>
 
-        <h3>Code:</h3>
-        <pre>
-          <code>
-            {`// LoadingSpinner.js
+      <h3>Code:</h3>
+      <pre>
+        <code>
+          {`// LoadingSpinner.js
 const LoadingSpinner = () => {
   return (
     <div style={styles.spinnerContainer}>
@@ -85,12 +84,12 @@ styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
 
 export default LoadingSpinner;
 `}
-          </code>
-        </pre>
-        <br/>
-        <pre>
-          <code>
-            {`// DataContent.js
+        </code>
+      </pre>
+      <br/>
+      <pre>
+        <code>
+          {`// DataContent.js
 const DataContent = () => {
   return (
     <div style={{ textAlign: 'center', padding: '20px' }}>
@@ -102,12 +101,12 @@ const DataContent = () => {
 
 export default DataContent;
 `}
-          </code>
-        </pre>
-        <br/>
-        <pre>
-          <code>
-            {`// LoadingState.js
+        </code>
+      </pre>
+      <br/>
+      <pre>
+        <code>
+          {`// LoadingState.js
 import { useEffect, useState } from 'react';
 import LoadingSpinner from './LoadingSpinner';
 import DataContent from './DataContent';
@@ -133,24 +132,21 @@ const LoadingState = () => {
 
 
   return (
-    <>
-      <div>
-        {loading ? <LoadingSpinner /> : <DataContent />}
-      </div>
-    </>
+    <div>
+      {loading ? <LoadingSpinner /> : <DataContent />}
+    </div>
   );
 };
 
 export default LoadingState;
 `}
-          </code>
-        </pre>
+        </code>
+      </pre>
 
-        <h3>Output:</h3>
-        {/* Show spinner while loading, show content when done */}
-        {loading ? <LoadingSpinner /> : <DataContent />}
-      </div>
-    </>
+      <h3>Output:</h3>
+      {/* Show spinner while loading, show content when done */}
+      {loading ? <LoadingSpinner /> : <DataContent />}
+    </div>
   );
 };
 
