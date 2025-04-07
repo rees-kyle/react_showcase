@@ -1,6 +1,7 @@
 import {
   ErrorHandlingAndLoadingStates,
-  UserFriendlyElements
+  UserFriendlyElements,
+  Summary
 } from '../../components/api_interaction/error_handling_and_loading_states';
 
 const ErrorHandlingAndLoadingStatesPage = () => {
@@ -8,6 +9,7 @@ const ErrorHandlingAndLoadingStatesPage = () => {
     <>
       <ErrorHandlingAndLoadingStates />
       <UserFriendlyElements />
+      <Summary />
     </>
   );
 };
