@@ -8,7 +8,7 @@ import {
   StateManagementInFunctionalComponents
 } from './pages/basics';
 import {
-  ErrorHandlingAndLoadingStates,
+  ErrorHandlingAndLoadingStatesPage,
   FetchingDataPage
 } from './pages/api_interaction';
 import {
@@ -54,7 +54,7 @@ function App() {
         <Navbar />
         <Routes>
           {/* api interaction */}
-          <Route path="/error-handling-and-loading-states" element={<ErrorHandlingAndLoadingStates />} />
+          <Route path="/error-handling-and-loading-states" element={<ErrorHandlingAndLoadingStatesPage />} />
           <Route path="/fetching-data" element={<FetchingDataPage />} />
           {/* basics */}
           <Route path="/jsx-syntax" element={<JSXSyntaxPage />} />
