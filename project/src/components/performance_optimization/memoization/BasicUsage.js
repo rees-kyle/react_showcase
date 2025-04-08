@@ -43,7 +43,7 @@ const BasicUsage = () => {
 
   return (
     <div>
-      <button onClick={() => setCount(count + 1)} style={{ marginRight: '1rem' }}>
+      <button onClick={() => setCount(count + 1)}>
         Increase Count
       </button>
       <button onClick={() => setValue('Value Updated!')}>
@@ -63,9 +63,10 @@ export default BasicUsage;
       </pre>
 
       <h3>Output:</h3>
-      <button onClick={() => setCount(count + 1)} style={{ marginRight: '1rem' }}>
+      <button onClick={() => setCount(count + 1)}>
         Increase Count
       </button>
+      <br/>
       <button onClick={() => setValue('Value Updated!')}>
         Change Value
       </button>
@@ -73,13 +74,13 @@ export default BasicUsage;
       <div className="output">
         <MyComponent value={value} />
       </div>
+      <h1 className="output">
+        You can use the browser’s developer tools (Inspect) to view console messages for this example.
+      </h1>
       <p>
         In this example, 'BasicUsage' (the parent component) re-renders whenever its state (count or value) changes.
         However, thanks to React.memo, MyComponent only re-renders when its specific prop (value) changes.
       </p>
-      <h1 className="output">
-          You can use the browser’s developer tools (Inspect) to view console messages for this example.
-      </h1>
     </div>
   );
 };
