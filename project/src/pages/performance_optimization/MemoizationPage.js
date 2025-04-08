@@ -1,6 +1,7 @@
 import {
   Memoization,
-  HowItWorks
+  HowItWorks,
+  WhenToUse
 } from '../../components/performance_optimization/memoization';
 
 const MemoizationPage = () => {
@@ -8,6 +9,7 @@ const MemoizationPage = () => {
     <>
       <Memoization />
       <HowItWorks />
+      <WhenToUse />
     </>
   );
 };
