@@ -2,6 +2,7 @@ import {
   Memoization,
   HowItWorks,
   BasicUsage,
+  CustomComparisonFunction,
   WhenToUse,
   WhenNotToUse,
   Summary
@@ -13,6 +14,7 @@ const MemoizationPage = () => {
       <Memoization />
       <HowItWorks />
       <BasicUsage />
+      <CustomComparisonFunction />
       <WhenToUse />
       <WhenNotToUse />
       <Summary />
