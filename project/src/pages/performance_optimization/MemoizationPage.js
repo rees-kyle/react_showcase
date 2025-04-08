@@ -1,6 +1,7 @@
 import {
   Memoization,
   HowItWorks,
+  BasicUsage,
   WhenToUse,
   WhenNotToUse,
   Summary
@@ -11,6 +12,7 @@ const MemoizationPage = () => {
     <>
       <Memoization />
       <HowItWorks />
+      <BasicUsage />
       <WhenToUse />
       <WhenNotToUse />
       <Summary />
