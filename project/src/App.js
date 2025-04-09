@@ -28,7 +28,7 @@ import {
 import {
   CodeSplitting,
   MemoizationPage,
-  UseMemoAndUseCallback
+  UseMemoAndUseCallbackPage
 } from './pages/performance_optimization';
 import ReactRouterPage from './pages/routing/ReactRouterPage';
 import {
@@ -75,7 +75,7 @@ function App() {
           {/* performance optimization */}
           <Route path="/code-splitting" element={<CodeSplitting />} />
           <Route path="/memoization" element={<MemoizationPage />} />
-          <Route path="/usememo-and-usecallback" element={<UseMemoAndUseCallback />} />
+          <Route path="/usememo-and-usecallback" element={<UseMemoAndUseCallbackPage />} />
           {/* routing */}
           <Route path="/react-router" element={<ReactRouterPage />} />
           {/* state management */}
