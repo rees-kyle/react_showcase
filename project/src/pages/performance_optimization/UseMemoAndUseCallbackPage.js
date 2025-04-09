@@ -1,6 +1,7 @@
 import {
   UseMemoAndUseCallback,
-  KeyPoints
+  KeyPoints,
+  Summary
 } from '../../components/performance_optimization/usememo_and_usecallback';
 
 const UseMemoAndUseCallbackPage = () => {
@@ -8,6 +9,7 @@ const UseMemoAndUseCallbackPage = () => {
     <>
       <UseMemoAndUseCallback />
       <KeyPoints />
+      <Summary />
     </>
   );
 };
