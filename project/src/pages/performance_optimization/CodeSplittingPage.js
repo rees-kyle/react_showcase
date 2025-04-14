@@ -1,6 +1,7 @@
 import {
   CodeSplitting,
-  Webpack
+  Webpack,
+  Summary
 } from '../../components/performance_optimization/code_splitting';
 
 const CodeSplittingPage = () => {
@@ -8,6 +9,7 @@ const CodeSplittingPage = () => {
     <>
       <CodeSplitting />
       <Webpack />
+      <Summary />
     </>
   );
 };
