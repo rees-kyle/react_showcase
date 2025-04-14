@@ -26,7 +26,7 @@ import {
   UseStateAndUseEffectPage
 } from './pages/hooks';
 import {
-  CodeSplitting,
+  CodeSplittingPage,
   MemoizationPage,
   UseMemoAndUseCallbackPage
 } from './pages/performance_optimization';
@@ -73,7 +73,7 @@ function App() {
           <Route path="/usecontext" element={<UseContextPage />} />
           <Route path="/usestate-and-useeffect" element={<UseStateAndUseEffectPage />} />
           {/* performance optimization */}
-          <Route path="/code-splitting" element={<CodeSplitting />} />
+          <Route path="/code-splitting" element={<CodeSplittingPage />} />
           <Route path="/memoization" element={<MemoizationPage />} />
           <Route path="/usememo-and-usecallback" element={<UseMemoAndUseCallbackPage />} />
           {/* routing */}
