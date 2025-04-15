@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkproject=self.webpackChunkproject||[]).push([[287],{2287:(e,r,o)=>{o.r(r),o.d(r,{default:()=>s});o(5043);var l=o(579);console.log("UserProfile file loaded");const s=function(){return console.log("UserProfile rendered"),(0,l.jsx)("div",{children:(0,l.jsx)("h1",{className:"output",children:"User Profile Loaded."})})}}}]);
+//# sourceMappingURL=287.bd8ddf15.chunk.js.map
