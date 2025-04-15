@@ -1,9 +1,24 @@
+const ReactRouter = () => {
+  return (
+    <div>
+      <br/>
+      <hr/>
+      <h2>Route-Based Code Splitting with React Router</h2>
+      <p>
+        In applications using React Router,
+        you can split code at the route level to load only the required components for each route.
+        This is ideal for multi-page apps.
+      </p>
+
+      <h3>Code:</h3>
+      <pre>
+        <code>
+          {`// App.js
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import Navbar from './components/navbar/Navbar';
 
-// Lazy load all pages
 const ProjectOverview = React.lazy(() => import('./pages/ProjectOverview'));
 const ComponentsAndProps = React.lazy(() => import('./pages/basics/ComponentsAndProps'));
 const JSXSyntaxPage = React.lazy(() => import('./pages/basics/JSXSyntaxPage'));
@@ -37,10 +52,8 @@ function App() {
       <Router basename="/react_showcase">
         <Header />
         <Navbar />
-        {/* Wrap all Routes inside Suspense */}
         <Suspense fallback={<></>}>
           <Routes>
-            {/* routes */}
             <Route path="/project-overview" element={<ProjectOverview />} />
             <Route path="/error-handling-and-loading-states" element={<ErrorHandlingAndLoadingStatesPage />} />
             <Route path="/fetching-data" element={<FetchingDataPage />} />
@@ -75,3 +88,19 @@ function App() {
 }
 
 export default App;
+`}
+        </code>
+      </pre>
+      <br/>
+      <p>
+        This React app uses React Router for navigation and React.lazy() with Suspense to load pages only when needed.
+        Each page component is lazy-loaded, which helps reduce the initial load time.
+        All routes are wrapped in a Suspense component, which can show a loading state while a page is loading (though here it’s empty).
+        The app uses a 'basename' of '/react_showcase', which is useful when deploying to a subfolder.
+        Each route points to a different page in your project, making the app organized and efficient.
+      </p>
+    </div>
+  );
+};
+
+export default ReactRouter;

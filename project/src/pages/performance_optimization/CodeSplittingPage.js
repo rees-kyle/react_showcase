@@ -1,6 +1,7 @@
 import {
   CodeSplitting,
   ReactLazyAndSuspense,
+  ReactRouter,
   Webpack,
   Summary
 } from '../../components/performance_optimization/code_splitting';
@@ -10,6 +11,7 @@ const CodeSplittingPage = () => {
     <>
       <CodeSplitting />
       <ReactLazyAndSuspense />
+      <ReactRouter />
       <Webpack />
       <Summary />
     </>
