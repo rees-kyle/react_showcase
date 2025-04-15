@@ -1,2 +1,2 @@
 export { default as ComponentTesting } from './ComponentTesting';
-export { default as UnitTesting } from './UnitTesting';
+export { default as UnitTestingPage } from './UnitTestingPage';
