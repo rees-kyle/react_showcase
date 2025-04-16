@@ -3,6 +3,7 @@ import {
   Install,
   Setup,
   Write,
+  Run,
   BestPractices
 } from '../../components/testing/unit_testing';
 
@@ -13,6 +14,7 @@ const UnitTestingPage = () => {
       <Install />
       <Setup />
       <Write />
+      <Run />
       <BestPractices />
     </>
   );
