@@ -2,6 +2,7 @@ import {
   UnitTesting,
   Install,
   Setup,
+  Write,
   BestPractices
 } from '../../components/testing/unit_testing';
 
@@ -11,6 +12,7 @@ const UnitTestingPage = () => {
       <UnitTesting />
       <Install />
       <Setup />
+      <Write />
       <BestPractices />
     </>
   );
