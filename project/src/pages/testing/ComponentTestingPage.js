@@ -1,6 +1,7 @@
 import {
   ComponentTesting,
-  Setup
+  Setup,
+  Concepts
 } from '../../components/testing/component_testing';
 
 const ComponentTestingPage = () => {
@@ -8,6 +9,7 @@ const ComponentTestingPage = () => {
     <>
       <ComponentTesting />
       <Setup />
+      <Concepts />
     </>
   );
 };
