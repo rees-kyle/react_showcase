@@ -2,7 +2,8 @@ import {
   ComponentTesting,
   Setup,
   Concepts,
-  CommonPatterns
+  CommonPatterns,
+  Utilities
 } from '../../components/testing/component_testing';
 
 const ComponentTestingPage = () => {
@@ -12,6 +13,7 @@ const ComponentTestingPage = () => {
       <Setup />
       <Concepts />
       <CommonPatterns />
+      <Utilities />
     </>
   );
 };
