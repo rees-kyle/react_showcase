@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './../../../button.css';
 
 const UseState = () => {
     // Declare a state variable 'count' initialized at 0
@@ -15,6 +16,7 @@ const UseState = () => {
             <pre>
                 <code>
                     {`import React, { useState } from 'react';
+import './../../../button.css';
 
 const UseState = () => {
     const [count, setCount] = useState(0);

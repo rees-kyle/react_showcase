@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
+import './../../../button.css';
 
 const Demo = () => {
   // State to hold the text content
@@ -46,6 +47,7 @@ const Demo = () => {
       <pre>
         <code>
           {`import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
+import './../../../button.css';
 
 const Demo = () => {
   const [text, setText] = useState("This is a span element.");

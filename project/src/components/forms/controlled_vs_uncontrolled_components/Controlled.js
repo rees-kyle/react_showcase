@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './../../../button.css';
 
 // Define the Controlled component
 function Controlled() {
@@ -37,7 +38,8 @@ function Controlled() {
             <h3>Code:</h3>
             <pre>
                 <code>
-                    {"import React, { useState } from 'react';\n\n" +
+                    {"import React, { useState } from 'react';\n" +
+                    "import './../../../button.css';\n\n" +
                     "function Controlled() {\n" +
                     "    const [inputValue, setInputValue] = useState('');\n\n" +
                     "    const handleChange = (event) => {\n" +

@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import './../../../button.css';
 
 // Define the Uncontrolled component
 function Uncontrolled() {
@@ -30,7 +31,8 @@ function Uncontrolled() {
             <h3>Code:</h3>
             <pre>
                 <code>
-                    {"import React, { useRef } from 'react';\n\n" +
+                    {"import React, { useRef } from 'react';\n" +
+                    "import './../../../button.css';\n\n" +
                     "function Uncontrolled() {\n" +
                     "    const inputRef = useRef(null);\n\n" +
                     "    const handleSubmit = (event) => {\n" +

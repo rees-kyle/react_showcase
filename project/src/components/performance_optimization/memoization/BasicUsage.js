@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import MyComponent from './MyComponent';
+import './../../../button.css';
 
 const BasicUsage = () => {
   const [count, setCount] = useState(0);
@@ -34,6 +35,7 @@ export default MyComponent;
           {`// BasicUsage.js
 import React, { useState } from 'react';
 import MyComponent from './MyComponent';
+import './../../../button.css';
 
 const BasicUsage = () => {
   const [count, setCount] = useState(0);

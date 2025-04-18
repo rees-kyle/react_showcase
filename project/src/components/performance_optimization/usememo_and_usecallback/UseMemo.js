@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ExpensiveComponent from './ExpensiveComponent';
+import './../../../button.css';
 
 function UseMemo() {
   const [items, setItems] = useState([
@@ -54,6 +55,7 @@ export default ExpensiveComponent;
           {`// UseMemo.js
 import React, { useState } from 'react';
 import ExpensiveComponent from './ExpensiveComponent';
+import './../../../button.css';
 
 function UseMemo() {
   const [items, setItems] = useState([

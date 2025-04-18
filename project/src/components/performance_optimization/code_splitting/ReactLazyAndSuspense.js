@@ -1,4 +1,5 @@
 import React, { Suspense, useState } from 'react';
+import './../../../button.css';
 
 // Lazy load with artificial 1 second delay
 const UserProfile = React.lazy(() => {
@@ -54,6 +55,7 @@ export default UserProfile;
         <code>
           {`// ReactLazyAndSuspense.js
 import React, { Suspense, useState } from 'react';
+import './../../../button.css';
 
 const UserProfile = React.lazy(() => {
   return new Promise(resolve => {

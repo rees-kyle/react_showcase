@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './../../../button.css';
 
 // Memoized component to prevent unnecessary re-renders based on custom comparison
 const MyComponent = React.memo(({ obj }) => {
@@ -34,6 +35,7 @@ const CustomComparisonFunction = () => {
       <pre>
         <code>
           {`import React, { useState } from 'react';
+import './../../../button.css';
 
 const MyComponent = React.memo(({ obj }) => {
   console.log("Rendering MyComponent");

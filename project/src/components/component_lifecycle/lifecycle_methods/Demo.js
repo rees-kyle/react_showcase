@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './../../../button.css';
 
 // Demo component that demonstrates lifecycle methods
 class Demo extends Component {
@@ -81,6 +82,7 @@ class ToggleDemo extends Component {
             <pre>
                 <code>
                     {`import React, { Component } from 'react';
+import './../../../button.css';
 
 class Demo extends Component {
   constructor(props) {

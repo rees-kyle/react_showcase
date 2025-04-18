@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { Context } from './ProviderComponent';
+import './../../../button.css';
 
 const Access = () => {
   const { state, setState } = useContext(Context);
@@ -25,6 +26,7 @@ const Access = () => {
         <code>
           {`import { useContext } from 'react';
 import { Context } from './ProviderComponent';
+import './../../../button.css';
 
 const Access = () => {
   const { state, setState } = useContext(Context);

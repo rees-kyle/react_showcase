@@ -1,4 +1,5 @@
 import React, { useCallback } from 'react';
+import './../../../button.css';
 
 function UseCallback() {
   console.log("ParentComponent rendered");
@@ -25,6 +26,7 @@ function UseCallback() {
         <code>
           {`// UseCallback.js
 import React, { useCallback } from 'react';
+import './../../../button.css';
 
 function UseCallback() {
   console.log("ParentComponent rendered");

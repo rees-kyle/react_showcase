@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import './../../../button.css';
 
 const validationSchema = Yup.object({
   name: Yup.string().required("Required"),
@@ -55,6 +56,7 @@ const ReactHookFormExample = () => {
 import { useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import './../../../button.css';
 
 const validationSchema = Yup.object({
   name: Yup.string().required("Required"),

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../context_api/ThemeProvider'; // Import ThemeContext
+import './../../../button.css';
 
 const ThemedComponent = () => {
   const { theme, setTheme } = useContext(ThemeContext); // Access theme state
@@ -48,6 +49,7 @@ export { ThemeProvider, ThemeContext };
           {`// ThemedComponent.js
 import React, { useContext } from 'react';
 import { ThemeContext } from '../context_api/ThemeProvider';
+import './../../../button.css';
 
 const ThemedComponent = () => {
   const { theme, setTheme } = useContext(ThemeContext);
