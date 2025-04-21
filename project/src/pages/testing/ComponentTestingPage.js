@@ -2,6 +2,7 @@ import {
   ComponentTesting,
   Setup,
   Concepts,
+  Write,
   CommonPatterns,
   Utilities
 } from '../../components/testing/component_testing';
@@ -12,6 +13,7 @@ const ComponentTestingPage = () => {
       <ComponentTesting />
       <Setup />
       <Concepts />
+      <Write />
       <CommonPatterns />
       <Utilities />
     </>
