@@ -29,7 +29,7 @@ const EmotionPage = React.lazy(() => import('./pages/styling/EmotionPage'));
 const StyledComponentsPage = React.lazy(() => import('./pages/styling/StyledComponentsPage'));
 const ComponentTestingPage = React.lazy(() => import('./pages/testing/ComponentTestingPage'));
 const UnitTestingPage = React.lazy(() => import('./pages/testing/UnitTestingPage'));
-const BasicConcepts = React.lazy(() => import('./pages/typescript/BasicConcepts'));
+const BasicConceptsPage = React.lazy(() => import('./pages/typescript/BasicConceptsPage'));
 
 function App() {
   return (
@@ -66,7 +66,7 @@ function App() {
             <Route path="/styled-components" element={<StyledComponentsPage />} />
             <Route path="/component-testing" element={<ComponentTestingPage />} />
             <Route path="/unit-testing" element={<UnitTestingPage />} />
-            <Route path="/basic-concepts" element={<BasicConcepts />} />
+            <Route path="/basic-concepts" element={<BasicConceptsPage />} />
           </Routes>
         </Suspense>
       </Router>
