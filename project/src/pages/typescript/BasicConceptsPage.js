@@ -1,10 +1,14 @@
 import React from 'react';
-import { BasicConcepts } from '../../components/typescript/basic_concepts';
+import {
+  BasicConcepts,
+  Setup
+} from '../../components/typescript/basic_concepts';
 
 const BasicConceptsPage = () => {
   return (
     <>
       <BasicConcepts />
+      <Setup />
     </>
   );
 };
