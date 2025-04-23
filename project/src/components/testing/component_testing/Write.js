@@ -3,7 +3,7 @@ import MyButton from './MyButton';
 
 const Write = () => {
   const handleButtonClick = () => {
-    console.log('Button was clicked!');
+    alert('Button was clicked!');
   };
 
   return (
@@ -73,7 +73,7 @@ import MyButton from './MyButton';
 
 const Write = () => {
   const handleButtonClick = () => {
-    console.log('Button was clicked!');
+    alert('Button was clicked!');
   };
 
   return (
