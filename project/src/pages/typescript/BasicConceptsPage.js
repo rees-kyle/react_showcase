@@ -4,7 +4,8 @@ import {
   Setup,
   TypingFunctionalComponents,
   WithReactFC,
-  WithoutReactFC
+  WithoutReactFC,
+  TypingProps
 } from '../../components/typescript/basic_concepts';
 
 const BasicConceptsPage = () => {
@@ -15,6 +16,7 @@ const BasicConceptsPage = () => {
       <TypingFunctionalComponents />
       <WithReactFC />
       <WithoutReactFC />
+      <TypingProps />
     </>
   );
 };
