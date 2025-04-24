@@ -5,3 +5,4 @@ export { WithReactFC, WithoutReactFC } from './TypingFunctionalComponents';
 export { default as TypingProps } from './TypingProps';
 export { default as UseStateWithTypes } from './UseStateWithTypes';
 export { default as TypingUseEffectDependencies } from './TypingUseEffectDependencies';
+export { default as SimpleExample } from './SimpleExample';
