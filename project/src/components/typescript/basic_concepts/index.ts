@@ -3,3 +3,4 @@ export { default as Setup } from './Setup';
 export { default as TypingFunctionalComponents } from './TypingFunctionalComponents';
 export { WithReactFC, WithoutReactFC } from './TypingFunctionalComponents';
 export { default as TypingProps } from './TypingProps';
+export { default as UseStateWithTypes } from './UseStateWithTypes';
