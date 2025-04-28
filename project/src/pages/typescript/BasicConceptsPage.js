@@ -10,7 +10,8 @@ import {
   TypingUseEffectDependencies,
   SimpleExample,
   ComplexExample,
-  EventHandling
+  EventHandling,
+  TypingRefs
 } from '../../components/typescript/basic_concepts';
 
 const BasicConceptsPage = () => {
@@ -27,6 +28,7 @@ const BasicConceptsPage = () => {
       <SimpleExample />
       <ComplexExample />
       <EventHandling />
+      <TypingRefs />
     </>
   );
 };
