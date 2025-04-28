@@ -7,3 +7,4 @@ export { default as UseStateWithTypes } from './UseStateWithTypes';
 export { default as TypingUseEffectDependencies } from './TypingUseEffectDependencies';
 export { default as SimpleExample } from './SimpleExample';
 export { default as ComplexExample } from './ComplexExample';
+export { default as EventHandling } from './EventHandling';

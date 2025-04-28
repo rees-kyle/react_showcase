@@ -9,7 +9,8 @@ import {
   UseStateWithTypes,
   TypingUseEffectDependencies,
   SimpleExample,
-  ComplexExample
+  ComplexExample,
+  EventHandling
 } from '../../components/typescript/basic_concepts';
 
 const BasicConceptsPage = () => {
@@ -25,6 +26,7 @@ const BasicConceptsPage = () => {
       <TypingUseEffectDependencies />
       <SimpleExample />
       <ComplexExample />
+      <EventHandling />
     </>
   );
 };
