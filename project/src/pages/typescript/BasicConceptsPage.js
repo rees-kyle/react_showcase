@@ -11,7 +11,8 @@ import {
   SimpleExample,
   ComplexExample,
   EventHandling,
-  TypingRefs
+  TypingRefs,
+  Summary
 } from '../../components/typescript/basic_concepts';
 
 const BasicConceptsPage = () => {
@@ -29,6 +30,7 @@ const BasicConceptsPage = () => {
       <ComplexExample />
       <EventHandling />
       <TypingRefs />
+      <Summary />
     </>
   );
 };
