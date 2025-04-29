@@ -13,6 +13,7 @@ import {
   EventHandling,
   TypingRefs,
   TypingContextAndCustomHooks,
+  TypingHigherOrderComponents,
   Summary
 } from '../../components/typescript/basic_concepts';
 
@@ -32,6 +33,7 @@ const BasicConceptsPage = () => {
       <EventHandling />
       <TypingRefs />
       <TypingContextAndCustomHooks />
+      <TypingHigherOrderComponents />
       <Summary />
     </>
   );
