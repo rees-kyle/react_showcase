@@ -11,4 +11,5 @@ export { default as EventHandling } from './EventHandling';
 export { default as TypingRefs } from './TypingRefs';
 export { default as TypingContextAndCustomHooks } from './TypingContextAndCustomHooks';
 export { default as TypingHigherOrderComponents } from './TypingHigherOrderComponents';
+export { default as UsingGenericsInComponents } from './UsingGenericsInComponents';
 export { default as Summary } from './Summary';

@@ -14,6 +14,7 @@ import {
   TypingRefs,
   TypingContextAndCustomHooks,
   TypingHigherOrderComponents,
+  UsingGenericsInComponents,
   Summary
 } from '../../components/typescript/basic_concepts';
 
@@ -34,6 +35,7 @@ const BasicConceptsPage = () => {
       <TypingRefs />
       <TypingContextAndCustomHooks />
       <TypingHigherOrderComponents />
+      <UsingGenericsInComponents />
       <Summary />
     </>
   );
