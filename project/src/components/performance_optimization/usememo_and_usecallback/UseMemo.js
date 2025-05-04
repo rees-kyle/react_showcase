@@ -68,12 +68,12 @@ function UseMemo() {
 
   return (
     <div>
-      <button onClick={() => setItems([...items, { value: 40 }])}>
+      <button type="button" onClick={() => setItems([...items, { value: 40 }])}>
         Add Item (value: 40)
       </button>
       <ExpensiveComponent items={items} />
       <br/>
-      <button onClick={() => setCount(count + 1)}>
+      <button type="button" onClick={() => setCount(count + 1)}>
         Force Re-render
       </button>
       <h1 className="output">Forced Re-render Count: {count}</h1>
@@ -87,12 +87,12 @@ export default UseMemo;
       </pre>
 
       <h3>Output:</h3>
-      <button onClick={() => setItems([...items, { value: 40 }])}>
+      <button type="button" onClick={() => setItems([...items, { value: 40 }])}>
         Add Item (value: 40)
       </button>
       <ExpensiveComponent items={items} />
       <br/>
-      <button onClick={() => setCount(count + 1)}>
+      <button type="button" onClick={() => setCount(count + 1)}>
         Force Re-render
       </button>
       <h1 className="output">Forced Re-render Count: {count}</h1>

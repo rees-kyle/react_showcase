@@ -57,9 +57,9 @@ const CustomComparisonFunction = () => {
 
   return (
     <div>
-      <button onClick={changeText}>Change Text</button>
+      <button type="button" onClick={changeText}>Change Text</button>
       <br/>
-      <button onClick={changeId}>Change ID</button>
+      <button type="button" onClick={changeId}>Change ID</button>
       <MyComponent obj={obj} />
     </div>
   );
@@ -71,9 +71,9 @@ export default CustomComparisonFunction;
       </pre>
 
       <h3>Output:</h3>
-      <button onClick={changeText}>Change Text</button>
+      <button type="button" onClick={changeText}>Change Text</button>
       <br/>
-      <button onClick={changeId}>Change ID</button>
+      <button type="button" onClick={changeId}>Change ID</button>
       <MyComponent obj={obj} />
       <h1 className="output">
         You can use the browser’s developer tools (Inspect) to view console messages for this example.

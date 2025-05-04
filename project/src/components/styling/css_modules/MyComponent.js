@@ -73,10 +73,11 @@ const MyComponent = () => {
 "    return (\n" +
 '        <div className={styles.container}>\n' +
 '            <h1 className={styles.title}>CSS Modules - Multiple Classes</h1>\n\n' +
+// eslint-disable-next-line no-template-curly-in-string
 '            <div className={`${styles.box} ${isHighlighted ? styles.highlight : ""} ${styles.border}`}>\n' +
 "                This box has multiple styles applied.\n" +
 "            </div>\n\n" +
-'            <button className={styles.button} onClick={() => setIsHighlighted(!isHighlighted)}>\n' +
+'            <button type="button" className={styles.button} onClick={() => setIsHighlighted(!isHighlighted)}>\n' +
 "                Toggle Highlight\n" +
 "            </button>\n" +
 "        </div>\n" +
@@ -94,7 +95,7 @@ const MyComponent = () => {
                     This box has multiple styles applied.
                 </div>
 
-                <button className={styles.button} onClick={() => setIsHighlighted(!isHighlighted)}>
+                <button type="button" className={styles.button} onClick={() => setIsHighlighted(!isHighlighted)}>
                     Toggle Highlight
                 </button>
             </div>

@@ -54,7 +54,7 @@ const TypingRefs = () => {
         type="text"
         ref={inputRef}
       />
-      <button onClick={focusInput}>
+      <button type="button" onClick={focusInput}>
         Focus Input
       </button>
     </div>
@@ -74,7 +74,7 @@ export default TypingRefs;
         ref={inputRef}
       />
       {/* Button to trigger the focusInput function when clicked */}
-      <button onClick={focusInput}>
+      <button type="button" onClick={focusInput}>
         Focus Input
       </button>
 

@@ -56,7 +56,7 @@ const Button = styled.button\`
 
 const StyledComponents = () => (
   <div>
-    <Button>Click Me</Button>
+    <Button type="button">Click Me</Button>
   </div>
 );
 
@@ -66,7 +66,7 @@ export default StyledComponents;
     </pre>
 
     <h3>Output:</h3>
-    <Button>Click Me</Button>
+    <Button type="button">Click Me</Button>
   </div>
 );
 

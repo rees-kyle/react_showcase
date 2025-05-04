@@ -35,7 +35,7 @@ function ObjectStateHandler() {
     return (
         <div>
             <h1 className="output">Theme: {settings.theme}</h1>
-            <button onClick={toggleTheme}>
+            <button type="button" onClick={toggleTheme}>
                 Toggle Theme
             </button>
         </div>
@@ -47,7 +47,7 @@ function ObjectStateHandler() {
 
             <h3>Output:</h3>
             <h1 className="output">Theme: {settings.theme}</h1>
-            <button onClick={toggleTheme}>
+            <button type="button" onClick={toggleTheme}>
                 Toggle Theme
             </button>
 

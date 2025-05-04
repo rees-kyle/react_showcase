@@ -74,7 +74,7 @@ function ReactLazyAndSuspense() {
 
   return (
     <div>
-      <button onClick={handleShowProfile}>Load User Profile</button>
+      <button type="button" onClick={handleShowProfile}>Load User Profile</button>
 
       {showProfile && (
         <Suspense fallback={<h1 className="output">Loading...</h1>}>
@@ -93,7 +93,7 @@ export default ReactLazyAndSuspense;
 
       <h3>Output:</h3>
       {/* Button to load the UserProfile */}
-      <button onClick={handleShowProfile}>Load User Profile</button>
+      <button type="button" onClick={handleShowProfile}>Load User Profile</button>
 
       {/* Only show UserProfile after button is clicked */}
       {showProfile && (

@@ -45,7 +45,7 @@ const Access = () => {
       {state.user ? (
         <h1 className="output">Welcome, {state.user.name}!</h1>
       ) : (
-        <button onClick={loginUser}>Login</button>
+        <button type="button" onClick={loginUser}>Login</button>
       )}
     </div>
   );
@@ -58,7 +58,7 @@ const Access = () => {
       {state.user ? (
         <h1 className="output">Welcome, {state.user.name}!</h1>
       ) : (
-        <button onClick={loginUser}>Login</button>
+        <button type="button" onClick={loginUser}>Login</button>
       )}
 
       <br/>

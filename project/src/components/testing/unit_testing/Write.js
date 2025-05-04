@@ -25,8 +25,8 @@ export default function Write() {
 import React from 'react';
 import '../../../button.css';
 
-export default function Button({ label, onClick }) {
-  return <button className="Button" onClick={onClick}>{label}</button>;
+export default function Button({ label, onClick, type = "button" }) {
+  return <button type={type} className="Button" onClick={onClick}>{label}</button>;
 }
 `}
         </code>
@@ -119,6 +119,26 @@ test('calls onClick when clicked', () => {
 
   expect(handleClick).toHaveBeenCalledTimes(1);
   console.log('Confirmed click handler was called once');
+});
+
+test('button has correct type attribute when specified', () => {
+  console.log('Running test: button has correct type attribute when specified');
+
+  render(<Button label="Submit" type="submit" />);
+  
+  const buttonElement = screen.getByText(/submit/i);
+  expect(buttonElement).toHaveAttribute('type', 'submit');
+  console.log('Confirmed button has type="submit"');
+});
+
+test('button defaults to type="button"', () => {
+  console.log('Running test: button defaults to type="button"');
+
+  render(<Button label="Default Type" />);
+  
+  const buttonElement = screen.getByText(/default type/i);
+  expect(buttonElement).toHaveAttribute('type', 'button');
+  console.log('Confirmed button has default type="button"');
 });
 `}
         </code>

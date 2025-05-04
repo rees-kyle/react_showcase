@@ -34,7 +34,7 @@ const UseState = () => {
 
     return (
         <div>
-            <button onClick={() => setCount(count + 1)}>Click me!</button>
+            <button type="button" onClick={() => setCount(count + 1)}>Click me!</button>
             <h1 className="output">You clicked {count} times!</h1>
         </div>
     );
@@ -44,7 +44,7 @@ const UseState = () => {
             </pre>
 
             <h3>Output:</h3>
-            <button onClick={() => setCount(count + 1)}>Click me!</button>
+            <button type="button" onClick={() => setCount(count + 1)}>Click me!</button>
             <h1 className="output">You clicked {count} times!</h1>
             <p>When the state is updated, the component re-renders to reflect the new state.</p>
 

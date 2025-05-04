@@ -3,7 +3,7 @@ import React from 'react';
 import '../../../button.css';
 
 // Define and export the Button component
-export default function Button({ label, onClick }) {
+export default function Button({ label, onClick, type = "button" }) {
   // Render a button element
-  return <button className="Button" onClick={onClick}>{label}</button>;
+  return <button type={type} className="Button" onClick={onClick}>{label}</button>;
 }

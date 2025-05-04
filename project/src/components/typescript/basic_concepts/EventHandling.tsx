@@ -48,7 +48,7 @@ const EventHandling = () => {
         onChange={handleChange}
       />
       
-      <button data-testid="my-button" onClick={handleClick}>
+      <button type="button" data-testid="my-button" onClick={handleClick}>
         Click Me
       </button>
     </div>
@@ -69,7 +69,7 @@ export default EventHandling;
       />
       
       {/* Button with an onClick event handler */}
-      <button data-testid="my-button" onClick={handleClick}>
+      <button type="button" data-testid="my-button" onClick={handleClick}>
         Click Me
       </button>
 

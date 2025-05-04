@@ -24,7 +24,7 @@ const UseState = () => {
     return (
         <div>
             <h1 className="output">You clicked {count} times</h1>
-            <button onClick={() => setCount(count + 1)}>
+            <button type="button" onClick={() => setCount(count + 1)}>
                 Click me
             </button>
         </div>
@@ -38,7 +38,7 @@ export default UseState;
 
             <h3>Output:</h3>
             <h1 className="output">You clicked {count} times</h1>
-            <button onClick={() => setCount(count + 1)}>
+            <button type="button" onClick={() => setCount(count + 1)}>
                 Click me
             </button>
             <p>'useState' takes the initial state value (e.g., 0 for the count) and returns an array with two elements: the current state and a function to update that state.</p>

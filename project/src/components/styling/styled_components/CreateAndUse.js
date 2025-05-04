@@ -69,7 +69,7 @@ const Button = styled.button\`
           {`const CreateAndUse = () => {
   return (
     <div>
-      <Button>Click Me</Button>
+      <Button type="button">Click Me</Button>
     </div>
   );
 };
@@ -81,7 +81,7 @@ export default CreateAndUse;
 
       <h3>Output:</h3>
       {/* Render the styled Button component with text */}
-      <Button>Click Me</Button>
+      <Button type="button">Click Me</Button>
     </div>
   );
 };

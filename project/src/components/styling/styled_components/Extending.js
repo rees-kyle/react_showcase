@@ -53,7 +53,7 @@ const Extending = () => {
 const Extending = () => {
   return (
     <div>
-      <ExtendedButton>Extended Button</ExtendedButton>
+      <ExtendedButton type="button">Extended Button</ExtendedButton>
     </div>
   );
 };
@@ -65,7 +65,7 @@ export default Extending;
 
       <h3>Output:</h3>
       {/* Render the 'ExtendedButton' component with customized styles */}
-      <ExtendedButton>Extended Button</ExtendedButton>
+      <ExtendedButton type="button">Extended Button</ExtendedButton>
     </div>
   );
 };

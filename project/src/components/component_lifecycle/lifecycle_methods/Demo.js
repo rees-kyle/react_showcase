@@ -52,6 +52,7 @@ class Demo extends Component {
     return (
       <div>
         <button 
+          type="button"
           onClick={this.handleIncrement} 
         >
           Increment
@@ -127,7 +128,8 @@ class Demo extends Component {
     return (
       <div>
         <p>Count: {this.state.count}</p>
-        <button 
+        <button
+          type="button"
           onClick={this.handleIncrement} 
         >
           Increment
@@ -148,6 +150,7 @@ class ToggleDemo extends Component {
     return (
       <div>
         <button 
+          type="button"
           onClick={this.toggleComponent} 
         >
           {this.state.showComponent ? 'Hide' : 'Show'} Lifecycle Demo
@@ -165,7 +168,8 @@ export default ToggleDemo;
             </pre>
 
         <h3>Output:</h3>
-        <button 
+        <button
+          type="button"
           onClick={this.toggleComponent} 
         >
           {this.state.showComponent ? 'Hide' : 'Show'} Lifecycle Demo

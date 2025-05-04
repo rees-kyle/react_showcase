@@ -6,7 +6,7 @@ const Attributes = () => {
         alert('Button clicked!');
     };
 
-    const attributeNames = <button className="btn" onClick={handleClick}>Click Me!</button>;
+    const attributeNames = <button type="button" className="btn" onClick={handleClick}>Click Me!</button>;
     return (
         <div>
             <br/>
@@ -21,7 +21,7 @@ const Attributes = () => {
     alert('Button clicked!');
 };
 
-const attributeNames = <button className="btn" onClick={handleClick}>Click Me!</button>;
+const attributeNames = <button type="button" className="btn" onClick={handleClick}>Click Me!</button>;
 
 {attributeNames}
 `}

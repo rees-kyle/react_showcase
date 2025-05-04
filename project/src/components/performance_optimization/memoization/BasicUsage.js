@@ -45,10 +45,10 @@ const BasicUsage = () => {
 
   return (
     <div>
-      <button onClick={() => setCount(count + 1)}>
+      <button type="button" onClick={() => setCount(count + 1)}>
         Increase Count
       </button>
-      <button onClick={() => setValue('Value Updated!')}>
+      <button type="button" onClick={() => setValue('Value Updated!')}>
         Change Value
       </button>
       <h1 className="output">Count: {count}</h1>
@@ -65,11 +65,11 @@ export default BasicUsage;
       </pre>
 
       <h3>Output:</h3>
-      <button onClick={() => setCount(count + 1)}>
+      <button type="button" onClick={() => setCount(count + 1)}>
         Increase Count
       </button>
       <br/>
-      <button onClick={() => setValue('Value Updated!')}>
+      <button type="button" onClick={() => setValue('Value Updated!')}>
         Change Value
       </button>
       <h1 className="output">Count: {count}</h1>

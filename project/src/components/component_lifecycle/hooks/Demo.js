@@ -73,7 +73,7 @@ const Demo = () => {
 
   return (
     <div>
-      <button onClick={handleAppendText}>Append Text</button>
+      <button type="button" onClick={handleAppendText}>Append Text</button>
       <br />
       <span ref={spanRef}>
         {text}
@@ -96,7 +96,7 @@ export default Demo;
       </p>
 
       <h3>Output:</h3>
-      <button onClick={handleAppendText}>Append Text</button>
+      <button type="button" onClick={handleAppendText}>Append Text</button>
       <br />
       <span ref={spanRef}>
         {text}

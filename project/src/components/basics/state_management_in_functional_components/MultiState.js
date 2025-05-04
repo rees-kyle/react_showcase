@@ -30,11 +30,11 @@ function MultiState() {
         <div>
             <h1 className="output">Name: {name}</h1>
             <h1 className="output">Age: {age}</h1>
-            <button onClick={() => setAge(age + 1)}>
+            <button type="button" onClick={() => setAge(age + 1)}>
                 Increment Age
             </button>
             <br/>
-            <button onClick={toggleName}>
+            <button type="button" onClick={toggleName}>
                 Toggle Name
             </button>
         </div>
@@ -47,11 +47,11 @@ function MultiState() {
             <h3>Output:</h3>
             <h1 className="output">Name: {name}</h1>
             <h1 className="output">Age: {age}</h1>
-            <button onClick={() => setAge(age + 1)}>
+            <button type="button" onClick={() => setAge(age + 1)}>
                 Increment Age
             </button>
             <br/>
-            <button onClick={toggleName}>
+            <button type="button" onClick={toggleName}>
                 Toggle Name
             </button>
 

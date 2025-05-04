@@ -75,7 +75,7 @@ const Button = styled.button\`
 const Theming = () => (
   <ThemeProvider theme={theme}>
     <div>
-      <Button>Click Me</Button>
+      <Button type="button">Click Me</Button>
     </div>
   </ThemeProvider>
 );
@@ -86,7 +86,7 @@ export default Theming;
       </pre>
 
       <h3>Output:</h3>
-      <Button>Click Me</Button>
+      <Button type="button">Click Me</Button>
     </div>
   </ThemeProvider>
 );

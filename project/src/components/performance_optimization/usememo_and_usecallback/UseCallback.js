@@ -44,7 +44,7 @@ function UseCallback() {
 
 function ChildComponent({ onClick }) {
   console.log("ChildComponent rendered");
-  return <button onClick={onClick}>Click Me</button>;
+  return <button type="button" onClick={onClick}>Click Me</button>;
 }
 
 export default UseCallback;
@@ -72,7 +72,7 @@ export default UseCallback;
 
 function ChildComponent({ onClick }) {
   console.log("ChildComponent rendered");
-  return <button onClick={onClick}>Click Me</button>;
+  return <button type="button" onClick={onClick}>Click Me</button>;
 }
 
 export default UseCallback;

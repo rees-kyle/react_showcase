@@ -125,7 +125,7 @@ const Example = () => {
 
   return (
     <div>
-      <button onClick={() => { 
+      <button type="button" onClick={() => { 
         console.log('Dispatching INCREMENT action');
         dispatch(increment());
       }}>
@@ -133,7 +133,7 @@ const Example = () => {
       </button>
       <h1 className="output">Counter: {count}</h1>
       <br/>
-      <button onClick={() => { 
+      <button type="button" onClick={() => { 
         console.log('Dispatching DECREMENT action');
         dispatch(decrement());
       }}>
@@ -149,7 +149,7 @@ export default Example;
       </pre>
 
       <h3>Output:</h3>
-      <button onClick={() => { 
+      <button type="button" onClick={() => { 
         console.log('Dispatching INCREMENT action');
         dispatch(increment());
       }}>
@@ -157,7 +157,7 @@ export default Example;
       </button>
       <h1 className="output">Counter: {count}</h1>
       <br/>
-      <button onClick={() => { 
+      <button type="button" onClick={() => { 
         console.log('Dispatching DECREMENT action');
         dispatch(decrement());
       }}>

@@ -59,7 +59,7 @@ const ThemedComponent = () => {
   return (
     <div>
       <h1 className="output">Theme: {theme}</h1>
-      <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+      <button type="button" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         Toggle Theme
       </button>
     </div>
@@ -73,7 +73,7 @@ export default ThemedComponent;
 
       <h3>Output:</h3>
       <h1 className="output">Theme: {theme}</h1>
-      <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+      <button type="button" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         Toggle Theme
       </button>
       <h1 className="output">
