@@ -14,7 +14,6 @@ function Uncontrolled() {
         alert(`Submitted value: ${inputRef.current.value}`); // Alert the current value of the input
     };
 
-
     return (
         <div>
             <br/>
@@ -31,44 +30,49 @@ function Uncontrolled() {
             <h3>Code:</h3>
             <pre>
                 <code>
-                    {"import React, { useRef } from 'react';\n" +
-                    "import './../../../button.css';\n\n" +
-                    "function Uncontrolled() {\n" +
-                    "    const inputRef = useRef(null);\n\n" +
-                    "    const handleSubmit = (event) => {\n" +
-                    "        event.preventDefault();\n" +
-                    "        console.log('Form submitted!');\n" +
-                    "        console.log('Current input value:', inputRef.current.value);\n" +
-                    "        alert('Submitted value: ' + inputRef.current.value);\n" +
-                    "    };\n\n\n" +
-                    "    return (\n" +
-                    "        <div>\n" +
-                    "            <form onSubmit={handleSubmit}>\n" +
-                    "                <input \n" +
-                    "                    type='text' \n" +
-                    "                    ref={inputRef} \n" +
-                    "                    id='user-input' \n" +
-                    "                    name='userInput' \n" +
-                    "                />\n" +
-                    "                <button type='submit'>Submit</button>\n" +
-                    "            </form>\n" +
-                    "        </div>\n" +
-                    "    );\n" +
-                    "}\n\n" +
-                    "export default Uncontrolled;"}
+                    {`import React, { useRef } from 'react';
+import './../../../button.css';
+
+function Uncontrolled() {
+    const inputRef = useRef(null);
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log("Form submitted!");
+        console.log("Current input value:", inputRef.current.value);
+        alert(\`Submitted value: \${inputRef.current.value}\`);
+    };
+
+    return (
+        <div>
+            <form onSubmit={handleSubmit}>
+                <label htmlFor="uncontrolled-input">Enter your input:</label>
+                <input
+                    type="text"
+                    ref={inputRef}
+                    id="uncontrolled-input"
+                    name="uncontrolledInput"
+                />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    );
+}
+
+export default Uncontrolled;
+`}
                 </code>
             </pre>
 
             <h3>Output:</h3>
             <form onSubmit={handleSubmit}>
-                {/* Input field is referenced by inputRef */}
+                <label htmlFor="uncontrolled-input">Enter your input:</label>
                 <input
                     type="text"
                     ref={inputRef}
-                    id="user-input"
-                    name="userInput"
+                    id="uncontrolled-input"
+                    name="uncontrolledInput"
                 />
-                {/* Submit button */}
                 <button type="submit">Submit</button>
             </form>
             <h1 className="output">

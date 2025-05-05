@@ -85,24 +85,27 @@ const ReactHookFormExample = () => {
 
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
-            <div>
-                <label className="label" htmlFor="name">Name: </label>
-                <input id="name" type="text" {...register("name")} autoComplete="name" />
-                {errors.name && <div className="error-message">{errors.name.message}</div>}
-            </div>
-            <br/>
-            <div>
-                <label className="label" htmlFor="email">Email: </label>
-                <input id="email" type="email" {...register("email")} autoComplete="email" />
-                {errors.email && <div className="error-message">{errors.email.message}</div>}
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+        <div>
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <div>
+                    <label className="label" htmlFor="name">Name: </label>
+                    <input id="name" type="text" {...register("name")} autoComplete="name" />
+                    {errors.name && <div className="error-message">{errors.name.message}</div>}
+                </div>
+                <br/>
+                <div>
+                    <label className="label" htmlFor="email">Email: </label>
+                    <input id="email" type="email" {...register("email")} autoComplete="email" />
+                    {errors.email && <div className="error-message">{errors.email.message}</div>}
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     );
 }
 
-export default ReactHookFormExample;`}
+export default ReactHookFormExample;
+`}
                 </code>
             </pre>
 

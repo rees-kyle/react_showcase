@@ -42,6 +42,7 @@ const EventHandling = () => {
 
   return (
     <div>
+      <label htmlFor="event-handling">Input Field: </label>
       <input
         id="event-handling"
         type="text"
@@ -61,6 +62,7 @@ export default EventHandling;
       </pre>
 
       <h3>Output:</h3>
+      <label htmlFor="event-handling">Input Field: </label>
       {/* Input field with an onChange event handler */}
       <input
         id="event-handling"

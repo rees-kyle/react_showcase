@@ -49,6 +49,7 @@ const TypingRefs = () => {
 
   return (
     <div>
+      <label htmlFor="typing-refs">Focusable Input: </label>
       <input
         id="typing-refs"
         type="text"
@@ -67,6 +68,7 @@ export default TypingRefs;
       </pre>
 
       <h3>Output:</h3>
+      <label htmlFor="typing-refs">Focusable Input: </label>
       {/* Input field with a reference assigned to inputRef */}
       <input
         id="typing-refs"

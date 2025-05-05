@@ -19,11 +19,10 @@ function Controlled() {
         alert(`Submitted value: ${inputValue}`); // Display the submitted value in an alert
     };
 
-
     return (
         <div>
-            <br/>
-            <hr/>
+            <br />
+            <hr />
             <h2>Controlled Components</h2>
             <p>
                 In controlled components, the form data is handled by the state of the React component.
@@ -38,46 +37,56 @@ function Controlled() {
             <h3>Code:</h3>
             <pre>
                 <code>
-                    {"import React, { useState } from 'react';\n" +
-                    "import './../../../button.css';\n\n" +
-                    "function Controlled() {\n" +
-                    "    const [inputValue, setInputValue] = useState('');\n\n" +
-                    "    const handleChange = (event) => {\n" +
-                    "        setInputValue(event.target.value);\n" +
-                    "        console.log('Input changed: ' + event.target.value);\n" +
-                    "    };\n\n" +
-                    "    const handleSubmit = (event) => {\n" +
-                    "        event.preventDefault();\n" +
-                    "        console.log('Form submitted with value: ' + inputValue);\n" +
-                    "        alert('Submitted value: ' + inputValue);\n" +
-                    "    };\n\n\n" +
-                    "    return (\n" +
-                    "        <div>\n" +
-                    "            <form onSubmit={handleSubmit}>\n" +
-                    "                <input \n" +
-                    "                    type='text' \n" +
-                    "                    id='user-input' \n" +
-                    "                    value={inputValue}\n" +
-                    "                    onChange={handleChange}\n" +
-                    "                />\n" +
-                    "                <button type='submit'>Submit</button>\n" +
-                    "            </form>\n" +
-                    "        </div>\n" +
-                    "    );\n" +
-                    "}\n\n" +
-                    "export default Controlled;"}
+                    {`import React, { useState } from 'react';
+import './../../../button.css';
+
+function Controlled() {
+    const [inputValue, setInputValue] = useState('');
+
+    const handleChange = (event) => {
+        setInputValue(event.target.value);
+        console.log(\`Input changed: \${event.target.value}\`);
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(\`Form submitted with value: \${inputValue}\`);
+        alert(\`Submitted value: \${inputValue}\`);
+    };
+
+    return (
+        <div>
+            <form onSubmit={handleSubmit}>
+                <label htmlFor="controlled-input">Enter text:</label>
+                <input 
+                    type="text" 
+                    id="controlled-input"
+                    name="controlledInput"
+                    value={inputValue}
+                    onChange={handleChange}
+                />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    );
+}
+
+export default Controlled;
+`}
                 </code>
             </pre>
 
             <h3>Output:</h3>
-            <form onSubmit={handleSubmit}> {/* Attach handleSubmit to form's onSubmit event */}
+            <form onSubmit={handleSubmit}>
+                <label htmlFor="controlled-input">Enter text:</label>
                 <input 
                     type="text" 
-                    id='user-input'
-                    value={inputValue} // Bind input value to the state variable 'inputValue'
-                    onChange={handleChange} // Attach handleChange to input's onChange event
+                    id="controlled-input"
+                    name="controlledInput"
+                    value={inputValue}
+                    onChange={handleChange}
                 />
-                <button type="submit">Submit</button> {/* Button to submit the form */}
+                <button type="submit">Submit</button>
             </form>
             <h1 className="output">
                 You can use the browser’s developer tools (Inspect) to view console messages for this example.
@@ -97,4 +106,4 @@ function Controlled() {
     );
 }
 
-export default Controlled; // Export the component for use in other files
+export default Controlled;

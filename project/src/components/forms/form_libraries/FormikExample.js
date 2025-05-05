@@ -47,39 +47,41 @@ const validationSchema = Yup.object({
 const FormikExample = () => {
     console.log("FormikExample component rendered");
 
-
     return (
-        <Formik
-            initialValues={{ name: "", email: "" }}
-            validationSchema={validationSchema}
-            onSubmit={(values) => {
-                alert("Form has been submitted!");
-                console.log("Formik Submitted:", values);
-            }}
-        >
-            {({ handleSubmit, values, errors, touched }) => {
-                console.log("Current Form Values:", values);
-                console.log("Validation Errors:", errors);
-                console.log("Touched Fields:", touched);
+        <div>
+            <Formik
+                initialValues={{ name: "", email: "" }}
+                validationSchema={validationSchema}
+                onSubmit={(values) => {
+                    alert("Form has been submitted!");
+                    console.log("Formik Submitted:", values);
+                }}
+            >
+                {({ handleSubmit, values, errors, touched }) => {
+                    console.log("Current Form Values:", values);
+                    console.log("Validation Errors:", errors);
+                    console.log("Touched Fields:", touched);
 
-                return (
-                    <Form onSubmit={handleSubmit}>
-                        <div>
-                            <label>Name: </label>
-                            <Field type="text" name="name" autoComplete="name" />
-                            <ErrorMessage className="error-message" name="name" component="div" />
-                        </div>
-                        <br/>
-                        <div>
-                            <label htmlFor="email">Email: </label>
-                            <Field type="email" name="email" autoComplete="email" />
-                            <ErrorMessage className="error-message" name="email" component="div" />
-                        </div>
-                        <button type="submit">Submit</button>
-                    </Form>
-                );
-            }}
-        </Formik>
+                    return (
+                        <Form onSubmit={handleSubmit}>
+                            <div>
+                                <label className="label" htmlFor="formik-name">Name: </label>
+                                <Field id="formik-name" type="text" name="name" autoComplete="name" />
+                                <ErrorMessage className="error-message" name="name" component="div" />
+                            </div>
+                            <br/>
+                            <div>
+                                <label className="label" htmlFor="formik-email">Email: </label>
+                                <Field id="formik-email" type="email" name="email" autoComplete="email" />
+                                <ErrorMessage className="error-message" name="email" component="div" />
+                            </div>
+
+                            <button type="submit">Submit</button>
+                        </Form>
+                    );
+                }}
+            </Formik>
+        </div>
     );
 }
 
@@ -104,14 +106,14 @@ export default FormikExample;`}
                     return (
                         <Form onSubmit={handleSubmit}>
                             <div>
-                                <label className="label" htmlFor="name">Name: </label>
-                                <Field id="name" type="text" name="name" autoComplete="name" />
+                                <label className="label" htmlFor="formik-name">Name: </label>
+                                <Field id="formik-name" type="text" name="name" autoComplete="name" />
                                 <ErrorMessage className="error-message" name="name" component="div" />
                             </div>
                             <br/>
                             <div>
-                                <label className="label" htmlFor="email">Email: </label>
-                                <Field id="email" type="email" name="email" autoComplete="email" />
+                                <label className="label" htmlFor="formik-email">Email: </label>
+                                <Field id="formik-email" type="email" name="email" autoComplete="email" />
                                 <ErrorMessage className="error-message" name="email" component="div" />
                             </div>
 
