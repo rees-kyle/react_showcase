@@ -1,22 +1,21 @@
 import React, { useState } from 'react';
 import './../../../button.css';
+import { sanitizeInput } from '../../../utils/sanitizeInput'; // adjust path as needed
 
-// Define the Controlled component
 function Controlled() {
-    // Declare a state variable 'inputValue' to hold the input field value
     const [inputValue, setInputValue] = useState('');
 
-    // Handle input change and update state
     const handleChange = (event) => {
-        setInputValue(event.target.value); // Update 'inputValue' with the current input value
-        console.log(`Input changed: ${event.target.value}`); // Log the updated input value
+        const rawValue = event.target.value;
+        const cleanValue = sanitizeInput(rawValue);
+        setInputValue(cleanValue);
+        console.log(`Input changed: ${cleanValue}`);
     };
 
-    // Handle form submission
     const handleSubmit = (event) => {
-        event.preventDefault(); // Prevent the default form submission behavior
-        console.log(`Form submitted with value: ${inputValue}`); // Log the submitted value
-        alert(`Submitted value: ${inputValue}`); // Display the submitted value in an alert
+        event.preventDefault();
+        console.log(`Form submitted with value: ${inputValue}`);
+        alert(`Submitted value: ${inputValue}`);
     };
 
     return (
@@ -39,13 +38,16 @@ function Controlled() {
                 <code>
                     {`import React, { useState } from 'react';
 import './../../../button.css';
+import { sanitizeInput } from '../../../utils/sanitizeInput'; // adjust path as needed
 
 function Controlled() {
     const [inputValue, setInputValue] = useState('');
 
     const handleChange = (event) => {
-        setInputValue(event.target.value);
-        console.log(\`Input changed: \${event.target.value}\`);
+        const rawValue = event.target.value;
+        const cleanValue = sanitizeInput(rawValue);
+        setInputValue(cleanValue);
+        console.log(\`Input changed: \${cleanValue}\`);
     };
 
     const handleSubmit = (event) => {
@@ -78,7 +80,7 @@ export default Controlled;
 
             <h3>Output:</h3>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="controlled-input">Enter text:</label>
+                <label htmlFor="controlled-input">Enter text: </label>
                 <input 
                     type="text" 
                     id="controlled-input"

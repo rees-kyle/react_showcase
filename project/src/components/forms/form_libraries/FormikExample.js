@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { sanitizeInput } from "../../../utils/sanitizeInput";
 import './../../../button.css';
 
 const validationSchema = Yup.object({
@@ -37,6 +38,7 @@ const FormikExample = () => {
                     {`import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { sanitizeInput } from "../../../utils/sanitizeInput";
 import './../../../button.css';
 
 const validationSchema = Yup.object({
@@ -53,8 +55,13 @@ const FormikExample = () => {
                 initialValues={{ name: "", email: "" }}
                 validationSchema={validationSchema}
                 onSubmit={(values) => {
+                    const sanitizedValues = {
+                        name: sanitizeInput(values.name),
+                        email: sanitizeInput(values.email),
+                    };
+
                     alert("Form has been submitted!");
-                    console.log("Formik Submitted:", values);
+                    console.log("Sanitized Formik Submitted:", sanitizedValues);
                 }}
             >
                 {({ handleSubmit, values, errors, touched }) => {
@@ -94,8 +101,13 @@ export default FormikExample;`}
                 initialValues={{ name: "", email: "" }}
                 validationSchema={validationSchema}
                 onSubmit={(values) => {
+                    const sanitizedValues = {
+                        name: sanitizeInput(values.name),
+                        email: sanitizeInput(values.email),
+                    };
+
                     alert("Form has been submitted!");
-                    console.log("Formik Submitted:", values);
+                    console.log("Sanitized Formik Submitted:", sanitizedValues);
                 }}
             >
                 {({ handleSubmit, values, errors, touched }) => {

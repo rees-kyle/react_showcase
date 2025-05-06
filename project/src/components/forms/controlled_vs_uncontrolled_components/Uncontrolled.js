@@ -1,17 +1,18 @@
 import React, { useRef } from 'react';
 import './../../../button.css';
+import { sanitizeInput } from '../../../utils/sanitizeInput';
 
-// Define the Uncontrolled component
 function Uncontrolled() {
-    // Create a reference to the input element using useRef hook
     const inputRef = useRef(null);
 
-    // Handle the form submission
     const handleSubmit = (event) => {
-        event.preventDefault(); // Prevent the default form submission behavior
-        console.log("Form submitted!"); // Log form submission event
-        console.log("Current input value:", inputRef.current.value); // Log the input value
-        alert(`Submitted value: ${inputRef.current.value}`); // Alert the current value of the input
+        event.preventDefault();
+        const rawValue = inputRef.current.value;
+        const cleanValue = sanitizeInput(rawValue);
+
+        console.log("Form submitted!");
+        console.log("Sanitized input value:", cleanValue);
+        alert(`Submitted value: ${cleanValue}`);
     };
 
     return (
@@ -32,21 +33,25 @@ function Uncontrolled() {
                 <code>
                     {`import React, { useRef } from 'react';
 import './../../../button.css';
+import { sanitizeInput } from '../../../utils/sanitizeInput';
 
 function Uncontrolled() {
     const inputRef = useRef(null);
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        const rawValue = inputRef.current.value;
+        const cleanValue = sanitizeInput(rawValue);
+
         console.log("Form submitted!");
-        console.log("Current input value:", inputRef.current.value);
-        alert(\`Submitted value: \${inputRef.current.value}\`);
+        console.log("Sanitized input value:", cleanValue);
+        alert(\`Submitted value: \${cleanValue}\`);
     };
 
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="uncontrolled-input">Enter your input:</label>
+                <label htmlFor="uncontrolled-input">Enter your input: </label>
                 <input
                     type="text"
                     ref={inputRef}
@@ -66,7 +71,7 @@ export default Uncontrolled;
 
             <h3>Output:</h3>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="uncontrolled-input">Enter your input:</label>
+                <label htmlFor="uncontrolled-input">Enter your input: </label>
                 <input
                     type="text"
                     ref={inputRef}
