@@ -11,7 +11,7 @@ const CombiningClasses = () => {
       <h3>Code:</h3>
       <pre>
         <code>
-          {'<div className={`${styles.box} ${styles.border}`}>Content</div>'}
+          {`<div className={\`\${styles.box} \${styles.border}\`}>Content</div>`}
         </code>
       </pre>
       <br/>
