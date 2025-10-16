@@ -64,7 +64,7 @@ import React from 'react';
 
 type ListProps<T> = {
   items: T[];
-  renderItem: (item: T) => JSX.Element;
+  renderItem: (item: T) => React.JSX.Element;
 };
 
 export const List = <T,>({ items, renderItem }: ListProps<T>) => {
