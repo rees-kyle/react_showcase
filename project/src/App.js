@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/header/Header';
 import Navbar from './components/navbar/Navbar';
 
@@ -34,12 +34,14 @@ const BasicConceptsPage = React.lazy(() => import('./pages/typescript/BasicConce
 function App() {
   return (
     <div className="app-container">
-      <Router basename="/react_showcase">
+      <Router>
         <Header />
         <Navbar />
         {/* Wrap all Routes inside Suspense */}
         <Suspense fallback={<></>}>
           <Routes>
+            {/* Redirect root "/" to /project-overview */}
+            <Route path="/" element={<Navigate to="/project-overview" replace />} />
             {/* routes */}
             <Route path="/project-overview" element={<ProjectOverview />} />
             <Route path="/error-handling-and-loading-states" element={<ErrorHandlingAndLoadingStatesPage />} />

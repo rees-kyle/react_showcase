@@ -3,7 +3,7 @@ import React from 'react';
 // Define a generic type 'ListProps' that takes any type 'T'
 type ListProps<T> = {
   items: T[]; // Array of items of type T
-  renderItem: (item: T) => JSX.Element; // Function to render each item
+  renderItem: (item: T) => React.JSX.Element; // Function to render each item
 };
 
 // Generic List component using type parameter T
